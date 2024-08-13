@@ -419,6 +419,17 @@ export const NewsData: NewsDataItem[] = [
       ["bilibili", ""],
     ]),
   },
+  {
+    title: "“纯血鸿蒙”要来了，相关岗位月入4万-6万元",
+    date: 999999,
+    link: generateLinkList([
+      ["tencent", "20231113A05R1800"],
+      ["netease", "IJE438430519D3V1"],
+      ["sohu", "736016608_100023965"],
+      ["baidu", "1782422351116103850"],
+      ["bilibili", ""],
+    ]),
+  },
 ].sort((x, y) => y.date - x.date);
 /**
  {
