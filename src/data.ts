@@ -421,12 +421,23 @@ export const NewsData: NewsDataItem[] = [
   },
   {
     title: "“纯血鸿蒙”要来了，相关岗位月入4万-6万元",
-    date: 999999,
+    date: 999998,
     link: generateLinkList([
       ["tencent", "20231113A05R1800"],
       ["netease", "IJE438430519D3V1"],
       ["sohu", "736016608_100023965"],
       ["baidu", "1782422351116103850"],
+      ["bilibili", ""],
+    ]),
+  },
+  {
+    title: "年薪160万!鸿蒙工程师究竟有多抢手?",
+    date: 999999,
+    link: generateLinkList([
+      ["tencent", "20231116A025TF00"],
+      ["netease", "IJLHMMM805476C4F"],
+      ["sohu", "747700495_121123740"],
+      ["baidu", "1782947135293125943"],
       ["bilibili", ""],
     ]),
   },
