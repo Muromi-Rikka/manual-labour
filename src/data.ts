@@ -86,8 +86,8 @@ export const NewsData: NewsDataItem[] = [
       ["sohu", "751675218_121123710"],
       ["netease", ""],
       ["bilibili", ""],
-    ],
-    ),
+    ]),
+    date: 202401,
   },
   {
     title: "年轻人入行装修月入4万",
@@ -98,7 +98,7 @@ export const NewsData: NewsDataItem[] = [
       ["sohu", "752147655_121218495"],
       ["bilibili", ""],
     ]),
-
+    date: 202401,
   },
   {
     title: "00后男生收破烂年入20万",
@@ -109,6 +109,7 @@ export const NewsData: NewsDataItem[] = [
       ["sohu", "752140467_100199564"],
       ["tencent", ""],
     ]),
+    date: 202311,
   },
   {
     title: "90后瓦工日薪2000在省会买了房",
@@ -119,6 +120,7 @@ export const NewsData: NewsDataItem[] = [
       ["sohu", ""],
       ["bilibili", ""],
     ]),
+    date: 202401,
   },
   {
     title: "00后女孩抡起大锤砸墙月入3万",
@@ -129,6 +131,7 @@ export const NewsData: NewsDataItem[] = [
       ["bilibili", ""],
       ["sohu", ""],
     ]),
+    date: 202309,
   },
   {
     title: "武汉90后会计转行做家政月入4万",
@@ -139,6 +142,7 @@ export const NewsData: NewsDataItem[] = [
       ["bilibili", ""],
       ["tencent", ""],
     ]),
+    date: 202401,
   },
   {
     title: "江苏95后男兽医做家政月入60万",
@@ -149,6 +153,7 @@ export const NewsData: NewsDataItem[] = [
       ["tencent", "20230927A0ATTL00"],
       ["bilibili", ""],
     ]),
+    date: 202309,
   },
   {
     title: "女生大学毕业卖烤猪月入3万",
@@ -159,6 +164,7 @@ export const NewsData: NewsDataItem[] = [
       ["bilibili", ""],
       ["baidu", ""],
     ]),
+    date: 202312,
   },
   {
     title: "19岁小伙辞职抓知了月入三四万",
@@ -169,6 +175,7 @@ export const NewsData: NewsDataItem[] = [
       ["bilibili", ""],
       ["baidu", "1771919776608654020"],
     ]),
+    date: 202307,
   },
   {
     title: "我在村里找到了月薪15000的工作",
@@ -179,6 +186,7 @@ export const NewsData: NewsDataItem[] = [
       ["bilibili", ""],
       ["baidu", "1773663321265606504"],
     ]),
+    date: 202308,
   },
   {
     title: "辞职后靠摆摊月入五万",
@@ -189,6 +197,7 @@ export const NewsData: NewsDataItem[] = [
       ["bilibili", ""],
       ["baidu", "1765399532372504537"],
     ]),
+    date: 202305,
   },
   {
     title: "35岁女子在香港做泥瓦工月入10万",
@@ -199,6 +208,7 @@ export const NewsData: NewsDataItem[] = [
       ["bilibili", ""],
       ["baidu", "1781882209221384692"],
     ]),
+    date: 202311,
   },
   {
     title: "杀猪女屠夫月入3万买房买奔驰",
@@ -209,6 +219,7 @@ export const NewsData: NewsDataItem[] = [
       ["bilibili", ""],
       ["baidu", "1755636289383918290"],
     ]),
+    date: 202301,
   },
   {
     title: "墓地保洁月入8000",
@@ -219,6 +230,7 @@ export const NewsData: NewsDataItem[] = [
       ["bilibili", ""],
       ["baidu", "1775746182977996914"],
     ]),
+    date: 202308,
   },
   {
     title: "90后程序员改行卖早餐年入30万",
@@ -229,6 +241,7 @@ export const NewsData: NewsDataItem[] = [
       ["bilibili", ""],
       ["baidu", "1758587889523957914"],
     ]),
+    date: 202302,
   },
   {
     title: "90后男子国企辞职摆摊收入涨3倍",
@@ -239,6 +252,7 @@ export const NewsData: NewsDataItem[] = [
       ["bilibili", ""],
       ["baidu", "1805026406935209101"],
     ]),
+    date: 202307,
   },
   {
     title: "中国女孩辞去国企工作北冰洋捕蟹月入13万",
@@ -249,6 +263,7 @@ export const NewsData: NewsDataItem[] = [
       ["bilibili", ""],
       ["baidu", "1801564758694246914"],
     ]),
+    date: 202406,
   },
   {
     title: "大厂员工离职后卖香蕉月入200万",
@@ -259,6 +274,7 @@ export const NewsData: NewsDataItem[] = [
       ["bilibili", ""],
       ["baidu", "1800480037664947224"],
     ]),
+    date: 202405,
   },
   {
     title: "女子在TikTok上卖车三个月入账2000万",
@@ -269,6 +285,7 @@ export const NewsData: NewsDataItem[] = [
       ["bilibili", ""],
       ["baidu", "1793651485235331414"],
     ]),
+    date: 202403,
   },
   {
     title: "妻子力挺丈夫6次创业终逆袭",
@@ -279,6 +296,7 @@ export const NewsData: NewsDataItem[] = [
       ["bilibili", ""],
       ["baidu", "1792746735960032733"],
     ]),
+    date: 202403,
   },
   {
     title: "26岁小伙做私厨月入5万,春节订单爆满",
@@ -289,6 +307,7 @@ export const NewsData: NewsDataItem[] = [
       ["bilibili", ""],
       ["baidu", "1790700758841377967"],
     ]),
+    date: 202402,
   },
   {
     title: "80后小伙送鲜花月入6万",
@@ -299,6 +318,7 @@ export const NewsData: NewsDataItem[] = [
       ["bilibili", ""],
       ["baidu", "1790748079012915485"],
     ]),
+    date: 202402,
   },
   {
     title: "27岁卡车女司机月入3万",
@@ -309,6 +329,7 @@ export const NewsData: NewsDataItem[] = [
       ["bilibili", ""],
       ["baidu", "1790496643701812472"],
     ]),
+    date: 202402,
   },
   {
     title: "大二女生卖男士保暖衣月入两万",
@@ -319,6 +340,7 @@ export const NewsData: NewsDataItem[] = [
       ["baidu", "1785903650768139466"],
       ["bilibili", ""],
     ]),
+    date: 202312,
   },
   {
     title: "清华女博士毕业做占星师月入3万元",
@@ -329,8 +351,9 @@ export const NewsData: NewsDataItem[] = [
       ["baidu", "1782460854711113164"],
       ["bilibili", ""],
     ]),
+    date: 202311,
   },
-];
+].sort((x, y) => y.date - x.date);
 /**
  link: generateLinkList([
  ["tencent", ""],

@@ -1,6 +1,7 @@
 export interface NewsDataItem {
   title: string;
   link: NewsDataLinkItem[];
+  date: number;
 }
 
 export interface NewsDataLinkItem {
