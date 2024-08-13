@@ -240,6 +240,16 @@ export const NewsData: NewsDataItem[] = [
       ["baidu", "1805026406935209101"],
     ]),
   },
+  {
+    title: "中国女孩辞去国企工作北冰洋捕蟹月入13万",
+    link: generateLinkList([
+      ["tencent", "20240611A01CV700"],
+      ["netease", "J4IHF8O505359IL8"],
+      ["sohu", "785384969_121124414"],
+      ["bilibili", ""],
+      ["baidu", "1801564758694246914"],
+    ]),
+  },
 ];
 /**
  link: generateLinkList([
