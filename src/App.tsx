@@ -17,14 +17,17 @@ function App() {
         <div className="text-center mb-4">
           <span className="text-red-600 text-2xl font-bold">新闻来源</span>
         </div>
-        <div className="h-18 w-full overflow-x-auto overflow-y-hidden whitespace-nowrap pb-2">
+        <div className="h-18 w-full text-center overflow-x-auto overflow-y-hidden whitespace-nowrap pb-2">
           {NewsWebsiteList.map(website => (<WebsiteItem data={website}></WebsiteItem>))}
         </div>
       </div>
       {
         NewsData.map(data => <NewsItem key={data.title} data={data} />)
       }
-      <div onClick={() => window.open("https://github.com/Muromi-Rikka/manual-labour/issues")} className="w-full p-4 mb-4 bg-white rounded drop-shadow-md flex flex-row justify-center items-center text-gray-500">
+      <div
+        onClick={() => window.open("https://github.com/Muromi-Rikka/manual-labour/issues")}
+        className="cursor-pointer w-full p-4 mb-4 bg-white rounded drop-shadow-md flex flex-row justify-center items-center text-gray-500"
+      >
         <span className="underline">欢迎投稿</span>
         <span className="icon-[icon-park-outline--github] ml-2"></span>
       </div>
