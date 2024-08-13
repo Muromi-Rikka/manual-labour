@@ -353,6 +353,17 @@ export const NewsData: NewsDataItem[] = [
     ]),
     date: 202311,
   },
+  {
+    title: "羽毛球拍穿线师月入三四万",
+    date: 202408,
+    link: generateLinkList([
+      ["tencent", "20240812A03A2100"],
+      ["netease", "J9DGM8G90529SM26"],
+      ["sohu", "800198581_121332524"],
+      ["baidu", "1807145949324826403"],
+      ["bilibili", ""],
+    ]),
+  },
 ].sort((x, y) => y.date - x.date);
 /**
  link: generateLinkList([
