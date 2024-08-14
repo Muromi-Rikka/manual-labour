@@ -17,3 +17,9 @@ export interface IWebsite {
   label: string;
   search: string;
 }
+
+export interface IJsonData {
+  title: string;
+  link: Array<[LinkType, string]>;
+  date: number;
+}

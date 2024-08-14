@@ -7,6 +7,11 @@ export default defineConfig({
   html: {
     title: "相关高薪体力活热搜",
   },
+  output: {
+    copy: [
+      { from: "./public", to: "./public" },
+    ],
+  },
   tools: {
     postcss: {
       postcssOptions: {

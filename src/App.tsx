@@ -1,13 +1,28 @@
 import "./App.css";
 import { useWindowSize } from "usehooks-ts";
-import { useMemo } from "react";
-import { NewsData, NewsWebsiteList } from "./data.ts";
+import { useEffect, useMemo, useState } from "react";
+import { NewsWebsiteList, generateLinkList } from "./data.ts";
 import { NewsItem } from "./NewsItem.tsx";
 import { WebsiteItem } from "./WebsiteItem.tsx";
+import type { IJsonData, NewsDataItem } from "./data.types.ts";
 
 function App() {
   const { width, height } = useWindowSize();
   const containerStyle = useMemo(() => ({ width: `${width}px`, height: `${height}px` }), [width, height]);
+
+  const [newsData, setNewsData] = useState< NewsDataItem[]>([]);
+  useEffect(() => {
+    fetch("/public/data.json").then(res => res.json()).then((res: IJsonData[]) => {
+      setNewsData(res.sort((x, y) => y.date - x.date).map((item) => {
+        return {
+          title: item.title,
+          link: generateLinkList(item.link),
+          date: item.date,
+        };
+      }));
+    });
+  }, []);
+
   return (
     <div className="p-4 bg-gray-100 overflow-x-hidden overflow-y-auto" style={containerStyle}>
       <div className="w-full p-4 mb-4 bg-white rounded drop-shadow-md text-center">
@@ -22,7 +37,7 @@ function App() {
             <span className="font-bold">《郑重声明》</span>
             <span>本站仅为正能量新闻资讯的聚合平台，所有信息均来源于</span>
             {NewsWebsiteList.map((website, index) => (
-              <span>
+              <span key={website.label}>
                 《
                 {website.label}
                 》
@@ -33,11 +48,11 @@ function App() {
           </p>
         </div>
         <div className="h-18 w-full text-center overflow-x-auto overflow-y-hidden whitespace-nowrap pb-2">
-          {NewsWebsiteList.map(website => (<WebsiteItem data={website}></WebsiteItem>))}
+          {NewsWebsiteList.map(website => (<WebsiteItem key={website.label} data={website}></WebsiteItem>))}
         </div>
       </div>
       {
-        NewsData.map(data => <NewsItem key={data.title} data={data} />)
+        newsData.map(data => <NewsItem key={data.title} data={data} />)
       }
       <div
         onClick={() => window.open("https://github.com/Muromi-Rikka/manual-labour/issues")}
