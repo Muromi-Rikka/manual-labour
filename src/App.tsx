@@ -17,6 +17,21 @@ function App() {
         <div className="text-center mb-4">
           <span className="text-red-600 text-2xl font-bold">新闻来源</span>
         </div>
+        <div className="px-4">
+          <p className="text-red-500">
+            <span className="font-bold">《郑重声明》</span>
+            <span>本站仅为正能量新闻资讯的聚合平台，所有信息均来源于</span>
+            {NewsWebsiteList.map((website, index) => (
+              <span>
+                《
+                {website.label}
+                》
+                {NewsWebsiteList.length - 1 > index ? "、" : "。"}
+              </span>
+            ))}
+            <span>本站所表述的观点不代表本网站的立场。具体内容请点击相关新闻下的按钮以查看详细信息。</span>
+          </p>
+        </div>
         <div className="h-18 w-full text-center overflow-x-auto overflow-y-hidden whitespace-nowrap pb-2">
           {NewsWebsiteList.map(website => (<WebsiteItem data={website}></WebsiteItem>))}
         </div>

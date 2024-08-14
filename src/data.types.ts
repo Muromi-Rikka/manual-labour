@@ -9,11 +9,11 @@ export interface NewsDataLinkItem {
   url: string;
 }
 
-export type LinkType = "tencent" | "netease" | "baidu" | "sohu" | "bilibili";
+export type LinkType = "tencent" | "netease" | "baidu" | "sohu" | "bilibili" | "toutiao";
 
 export interface IWebsite {
   type: LinkType;
   url: string;
   label: string;
-
+  search: string;
 }

@@ -1,6 +1,7 @@
-import type { NewsDataItem } from "./data.types.ts";
-import { LinkTypeRecord } from "./data.ts";
+import type { LinkType, NewsDataItem } from "./data.types.ts";
+import { LinkTypeRecord, NewsWebsiteList } from "./data.ts";
 
+const searchRecord: Record<LinkType, string> = Object.fromEntries(NewsWebsiteList.map(item => [item.type, item.search])) as Record<LinkType, string>;
 export function NewsItem(props: { data: NewsDataItem }) {
   const { data } = props;
   return (
@@ -16,10 +17,12 @@ export function NewsItem(props: { data: NewsDataItem }) {
         {data.link.map(item => (
           <div
             key={item.type}
-            className={`mx-1 w-8 cursor-pointer h-8 bg-red-100 drop-shadow-md rounded-md flex flex-row justify-center items-center ${item.url ? "" : "opacity-50 cursor-not-allowed"}`}
+            className={`mx-1 w-8 h-8 drop-shadow-md rounded-md flex flex-row justify-center items-center ${item.url ? "cursor-pointer bg-red-100" : "opacity-50 cursor-not-allowed bg-gray-200 text-gray-500"}`}
             onClick={() => {
               if (item.url)
                 window.open(item.url);
+              else
+                window.open(searchRecord[item.type] + data.title);
             }}
           >
             <span className={LinkTypeRecord[item.type]}></span>

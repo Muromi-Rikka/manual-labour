@@ -9,13 +9,14 @@ import type { IWebsite, LinkType, NewsDataItem, NewsDataLinkItem } from "./data.
  * baidu    https://baijiahao.baidu.com/s?id=${id}
  * bilibili https://www.bilibili.com/video/${id}/
  * sohu     https://www.sohu.com/a/${id}
+ * toutiao  https://www.toutiao.com/article/${id}
  * ```
  * @param {LinkType} type
  * @param {string} id
  * @returns {NewsDataLinkItem} NewsDataLinkItem
  */
 function generateLink(type: LinkType, id: string): NewsDataLinkItem {
-  if (!id) {
+  if (id === "") {
     return { type, url: id };
   }
   let url = "";
@@ -35,6 +36,8 @@ function generateLink(type: LinkType, id: string): NewsDataLinkItem {
     case "sohu":
       url = `https://www.sohu.com/a/${id}`;
       break;
+    case "toutiao":
+      url = `https://www.toutiao.com/article/${id}`;
   }
   return {
     type,
@@ -52,6 +55,7 @@ function generateLink(type: LinkType, id: string): NewsDataLinkItem {
  * baidu    https://baijiahao.baidu.com/s?id=${id}
  * bilibili https://www.bilibili.com/video/${id}/
  * sohu     https://www.sohu.com/a/${id}
+ * toutiao     https://www.toutiao.com/article/${id}
  * ```
  *
  * @param {Array<[LinkType, string]>} list
@@ -67,14 +71,16 @@ export const LinkTypeRecord: Record<LinkType, `icon-[${string}--${string}]`> = {
   baidu: "icon-[simple-icons--baidu]",
   sohu: "icon-[emojione-monotone--fox]",
   bilibili: "icon-[simple-icons--bilibili]",
+  toutiao: "icon-[icon-park-outline--jinritoutiao]",
 };
 
 export const NewsWebsiteList: Array<IWebsite> = [
-  { type: "tencent", label: "腾讯新闻", url: "https://new.qq.com/" },
-  { type: "netease", label: "网易新闻", url: "https://www.163.com/" },
-  { type: "baidu", label: "百度百家号", url: "https://baijiahao.baidu.com/" },
-  { type: "sohu", label: "搜狐新闻", url: "https://www.sohu.com" },
-  { type: "bilibili", label: "哔哩哔哩", url: "https://www.bilibili.com" },
+  { type: "tencent", label: "腾讯新闻", url: "https://news.qq.com/", search: "https://new.qq.com/search?query=" },
+  { type: "netease", label: "网易新闻", url: "https://www.163.com/", search: "https://www.163.com/search?keyword=" },
+  { type: "baidu", label: "百度百家号", url: "https://baijiahao.baidu.com/", search: "https://www.baidu.com/s?rsv_dl=feed_landingpage_ib&wd=" },
+  { type: "sohu", label: "搜狐新闻", url: "https://www.sohu.com", search: "https://search.sohu.com/?keyword=" },
+  { type: "bilibili", label: "哔哩哔哩", url: "https://www.bilibili.com", search: "https://search.bilibili.com/all?keyword=" },
+  { type: "toutiao", label: "今日头条", url: "https://www.toutiao.com/", search: "https://so.toutiao.com/search?dvpf=pc&source=input&keyword=" },
 ];
 
 export const NewsData: NewsDataItem[] = [
@@ -86,6 +92,7 @@ export const NewsData: NewsDataItem[] = [
       ["sohu", "751675218_121123710"],
       ["netease", ""],
       ["bilibili", ""],
+      ["toutiao", "7334610529975403017"],
     ]),
     date: 202401,
   },
@@ -97,6 +104,7 @@ export const NewsData: NewsDataItem[] = [
       ["baidu", "1788217538829371016"],
       ["sohu", "752147655_121218495"],
       ["bilibili", ""],
+      ["toutiao", "7324539015074677300"],
     ]),
     date: 202401,
   },
@@ -108,6 +116,7 @@ export const NewsData: NewsDataItem[] = [
       ["baidu", "1788144070305584678"],
       ["sohu", "752140467_100199564"],
       ["tencent", ""],
+      ["toutiao", "7324571987425280549"],
     ]),
     date: 202311,
   },
@@ -119,6 +128,7 @@ export const NewsData: NewsDataItem[] = [
       ["baidu", "1788152381623997430"],
       ["sohu", ""],
       ["bilibili", ""],
+      ["toutiao", "7324263906980676107"],
     ]),
     date: 202401,
   },
@@ -130,6 +140,8 @@ export const NewsData: NewsDataItem[] = [
       ["baidu", "1778289409027679198"],
       ["bilibili", ""],
       ["sohu", ""],
+      ["toutiao", "7284464280454545955"],
+
     ]),
     date: 202309,
   },
@@ -141,6 +153,8 @@ export const NewsData: NewsDataItem[] = [
       ["baidu", "1787514871041579397"],
       ["bilibili", ""],
       ["tencent", ""],
+      ["toutiao", "7321717499396276755"],
+
     ]),
     date: 202401,
   },
@@ -152,6 +166,8 @@ export const NewsData: NewsDataItem[] = [
       ["baidu", "1778183516524899044"],
       ["tencent", "20230927A0ATTL00"],
       ["bilibili", ""],
+      ["toutiao", "7283520559252914724"],
+
     ]),
     date: 202309,
   },
@@ -163,6 +179,8 @@ export const NewsData: NewsDataItem[] = [
       ["sohu", "797170929_121985810"],
       ["bilibili", ""],
       ["baidu", ""],
+      ["toutiao", "7317730801360060982"],
+
     ]),
     date: 202312,
   },
@@ -174,17 +192,21 @@ export const NewsData: NewsDataItem[] = [
       ["sohu", "705022210_349120"],
       ["bilibili", ""],
       ["baidu", "1771919776608654020"],
+      ["toutiao", "7257560297723445818"],
+
     ]),
     date: 202307,
   },
   {
-    title: "我在村里找到了月薪15000的工作",
+    title: "90后姑娘在村里找到了月薪15000的工作",
     link: generateLinkList([
       ["tencent", ""],
       ["netease", ""],
       ["sohu", ""],
       ["bilibili", ""],
       ["baidu", "1773663321265606504"],
+      ["toutiao", "7264916527332213283"],
+
     ]),
     date: 202308,
   },
@@ -196,6 +218,8 @@ export const NewsData: NewsDataItem[] = [
       ["sohu", "796484978_121985223"],
       ["bilibili", ""],
       ["baidu", "1765399532372504537"],
+      ["toutiao", "7376830331124449802"],
+
     ]),
     date: 202305,
   },
@@ -207,6 +231,8 @@ export const NewsData: NewsDataItem[] = [
       ["sohu", "734551631_121287299"],
       ["bilibili", ""],
       ["baidu", "1781882209221384692"],
+      ["toutiao", "7298676391975944713"],
+
     ]),
     date: 202311,
   },
@@ -218,6 +244,8 @@ export const NewsData: NewsDataItem[] = [
       ["sohu", "633156209_121019331"],
       ["bilibili", ""],
       ["baidu", "1755636289383918290"],
+      ["toutiao", "7190891827518833189"],
+
     ]),
     date: 202301,
   },
@@ -229,6 +257,8 @@ export const NewsData: NewsDataItem[] = [
       ["sohu", "716615780_121260755"],
       ["bilibili", ""],
       ["baidu", "1775746182977996914"],
+      ["toutiao", "7275984006997721600"],
+
     ]),
     date: 202308,
   },
@@ -240,6 +270,8 @@ export const NewsData: NewsDataItem[] = [
       ["sohu", "644794267_121019331"],
       ["bilibili", ""],
       ["baidu", "1758587889523957914"],
+      ["toutiao", "7202946514094719523"],
+
     ]),
     date: 202302,
   },
@@ -251,6 +283,8 @@ export const NewsData: NewsDataItem[] = [
       ["sohu", "400094893_120726317"],
       ["bilibili", ""],
       ["baidu", "1805026406935209101"],
+      ["toutiao", "7255989904894100026"],
+
     ]),
     date: 202307,
   },
@@ -262,6 +296,8 @@ export const NewsData: NewsDataItem[] = [
       ["sohu", "785384969_121124414"],
       ["bilibili", ""],
       ["baidu", "1801564758694246914"],
+      ["toutiao", "7379591601041064474"],
+
     ]),
     date: 202406,
   },
@@ -273,6 +309,8 @@ export const NewsData: NewsDataItem[] = [
       ["sohu", "782566024_121434862"],
       ["bilibili", ""],
       ["baidu", "1800480037664947224"],
+      ["toutiao", "7374741385482404392"],
+
     ]),
     date: 202405,
   },
@@ -284,6 +322,8 @@ export const NewsData: NewsDataItem[] = [
       ["sohu", "765345316_114822"],
       ["bilibili", ""],
       ["baidu", "1793651485235331414"],
+      ["toutiao", "7346070142260838947"],
+
     ]),
     date: 202403,
   },
@@ -295,6 +335,8 @@ export const NewsData: NewsDataItem[] = [
       ["sohu", "762213768_426502"],
       ["bilibili", ""],
       ["baidu", "1792746735960032733"],
+      ["toutiao", "7343067969993736767"],
+
     ]),
     date: 202403,
   },
@@ -306,6 +348,8 @@ export const NewsData: NewsDataItem[] = [
       ["sohu", "757720221_121087783"],
       ["bilibili", ""],
       ["baidu", "1790700758841377967"],
+      ["toutiao", "7335814474421355027"],
+
     ]),
     date: 202402,
   },
@@ -317,6 +361,8 @@ export const NewsData: NewsDataItem[] = [
       ["sohu", "757834246_121117075"],
       ["bilibili", ""],
       ["baidu", "1790748079012915485"],
+      ["toutiao", "7335073782774055476"],
+
     ]),
     date: 202402,
   },
@@ -328,6 +374,8 @@ export const NewsData: NewsDataItem[] = [
       ["sohu", "757491725_121353797"],
       ["bilibili", ""],
       ["baidu", "1790496643701812472"],
+      ["toutiao", "7334139545581257266"],
+
     ]),
     date: 202402,
   },
@@ -339,6 +387,8 @@ export const NewsData: NewsDataItem[] = [
       ["sohu", "746139604_121455421"],
       ["baidu", "1785903650768139466"],
       ["bilibili", ""],
+      ["toutiao", "7315248493507985930"],
+
     ]),
     date: 202312,
   },
@@ -349,6 +399,7 @@ export const NewsData: NewsDataItem[] = [
       ["netease", "IJGDDO880553CV3H"],
       ["sohu", "736155541_121286594"],
       ["baidu", "1782460854711113164"],
+      ["toutiao", "7303689372249932351"],
       ["bilibili", ""],
     ]),
     date: 202311,
@@ -361,6 +412,7 @@ export const NewsData: NewsDataItem[] = [
       ["netease", "J9DGM8G90529SM26"],
       ["sohu", "800198581_121332524"],
       ["baidu", "1807145949324826403"],
+      ["toutiao", "7402069898760880674"],
       ["bilibili", ""],
     ]),
   },
@@ -372,6 +424,7 @@ export const NewsData: NewsDataItem[] = [
       ["netease", "IDB44PH40552D7RN"],
       ["sohu", "715996313_121118710"],
       ["baidu", "1775639038299171961"],
+      ["toutiao", "7272649258279387687"],
       ["bilibili", ""],
     ]),
   },
@@ -383,6 +436,7 @@ export const NewsData: NewsDataItem[] = [
       ["netease", "HOA8LDKI0550789W"],
       ["sohu", "616065783_120106510"],
       ["baidu", "1751352755427227449"],
+      ["toutiao", "7173540976827466292"],
       ["bilibili", ""],
     ]),
   },
@@ -394,6 +448,7 @@ export const NewsData: NewsDataItem[] = [
       ["netease", "HL1PJ5RP05536G4N"],
       ["sohu", "602462842_100024718"],
       ["baidu", "1748816922924893535"],
+      ["toutiao", "7219454720576848387"],
       ["bilibili", ""],
     ]),
   },
@@ -405,6 +460,7 @@ export const NewsData: NewsDataItem[] = [
       ["netease", "HCLE0T0J0512B07B"],
       ["sohu", "570285508_100124068"],
       ["baidu", "1738859131647449143"],
+      ["toutiao", "7122315585479770632"],
       ["bilibili", ""],
     ]),
   },
@@ -416,6 +472,7 @@ export const NewsData: NewsDataItem[] = [
       ["netease", "GS2AN0T205199UID"],
       ["sohu", "435880377_114988"],
       ["baidu", "1719998289272411730"],
+      ["toutiao", "7045083649251181070"],
       ["bilibili", ""],
     ]),
   },
@@ -427,6 +484,7 @@ export const NewsData: NewsDataItem[] = [
       ["netease", "IJE438430519D3V1"],
       ["sohu", "736016608_100023965"],
       ["baidu", "1782422351116103850"],
+      ["toutiao", "7325403736703255103"],
       ["bilibili", ""],
     ]),
   },
@@ -438,6 +496,7 @@ export const NewsData: NewsDataItem[] = [
       ["netease", "IJLHMMM805476C4F"],
       ["sohu", "747700495_121123740"],
       ["baidu", "1782947135293125943"],
+      ["toutiao", "7301866116312482367"],
       ["bilibili", ""],
     ]),
   },
