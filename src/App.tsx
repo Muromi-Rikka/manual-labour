@@ -32,7 +32,7 @@ function App() {
         <div className="text-center mb-4">
           <span className="text-red-600 text-2xl font-bold">新闻来源</span>
         </div>
-        <div className="px-4">
+        <div className="p-4">
           <p className="text-red-500">
             <span className="font-bold">《郑重声明》</span>
             <span>本站仅为正能量新闻资讯的聚合平台，所有信息均来源于</span>
