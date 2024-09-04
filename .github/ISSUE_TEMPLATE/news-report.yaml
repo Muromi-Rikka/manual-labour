@@ -1,0 +1,60 @@
+name: News Report
+description: 近期或历史新闻报告
+labels: [news]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: 新闻标题
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: 新闻日期
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: 腾讯新闻
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: 网易新闻
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: 百度百家号
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: 搜狐新闻
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: 今日头条
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: 哔哩哔哩
+  - type: checkboxes
+    id: checkboxes
+    attributes:
+      label: Validations
+      description: Before submitting the issue, please make sure you do the following
+      options:
+        - label: 保证新闻内容真实可靠
+          required: true
+        - label: 确保新闻为正能量导向
+          required: true
