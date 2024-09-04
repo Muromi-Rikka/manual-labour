@@ -12,8 +12,8 @@ function App() {
 
   const [newsData, setNewsData] = useState< NewsDataItem[]>([]);
   useEffect(() => {
-    fetch("/public/data.json").then(res => res.json()).then((res: IJsonData[]) => {
-      setNewsData(res.sort((x, y) => y.date - x.date).map((item) => {
+    fetch("/public/data.json").then(res => res.json()).then((res: { data: IJsonData[] }) => {
+      setNewsData(res.data.sort((x, y) => y.date - x.date).map((item) => {
         return {
           title: item.title,
           link: generateLinkList(item.link),
