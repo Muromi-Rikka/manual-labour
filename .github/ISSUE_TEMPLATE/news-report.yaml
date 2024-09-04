@@ -15,37 +15,37 @@ body:
     validations:
       required: true
   - type: input
-    id: date
+    id: tencent
     attributes:
       label: 腾讯新闻
     validations:
       required: true
   - type: input
-    id: date
+    id: netease
     attributes:
       label: 网易新闻
     validations:
       required: true
   - type: input
-    id: date
+    id: baidu
     attributes:
       label: 百度百家号
     validations:
       required: true
   - type: input
-    id: date
+    id: sohu
     attributes:
       label: 搜狐新闻
     validations:
       required: true
   - type: input
-    id: date
+    id: toutiao
     attributes:
       label: 今日头条
     validations:
       required: true
   - type: input
-    id: date
+    id: bilibili
     attributes:
       label: 哔哩哔哩
   - type: checkboxes
