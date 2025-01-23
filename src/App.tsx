@@ -1,10 +1,10 @@
-import "./App.css";
-import { useWindowSize } from "usehooks-ts";
+import type { IJsonData, NewsDataItem } from "./data.types.ts";
 import { useEffect, useMemo, useState } from "react";
-import { NewsWebsiteList, generateLinkList } from "./data.ts";
+import { useWindowSize } from "usehooks-ts";
+import { generateLinkList, NewsWebsiteList } from "./data.ts";
 import { NewsItem } from "./NewsItem.tsx";
 import { WebsiteItem } from "./WebsiteItem.tsx";
-import type { IJsonData, NewsDataItem } from "./data.types.ts";
+import "./App.css";
 
 function App() {
   const { width, height } = useWindowSize();
@@ -25,10 +25,10 @@ function App() {
 
   return (
     <div className="p-4 bg-gray-100 overflow-x-hidden overflow-y-auto" style={containerStyle}>
-      <div className="w-full p-4 mb-4 bg-white rounded drop-shadow-md text-center">
+      <div className="w-full p-4 mb-4 bg-white rounded-sm drop-shadow-md text-center">
         <span className="text-red-500 text-3xl font-bold">相关高薪体力活热搜</span>
       </div>
-      <div className="w-full p-4 mb-4 bg-white rounded drop-shadow-md">
+      <div className="w-full p-4 mb-4 bg-white rounded-sm drop-shadow-md">
         <div className="text-center mb-4">
           <span className="text-red-600 text-2xl font-bold">新闻来源</span>
         </div>
@@ -56,7 +56,7 @@ function App() {
       }
       <div
         onClick={() => window.open("https://github.com/Muromi-Rikka/manual-labour/issues")}
-        className="cursor-pointer w-full p-4 mb-4 bg-white rounded drop-shadow-md flex flex-row justify-center items-center text-gray-500"
+        className="cursor-pointer w-full p-4 mb-4 bg-white rounded-sm drop-shadow-md flex flex-row justify-center items-center text-gray-500"
       >
         <span className="underline">欢迎投稿</span>
         <span className="icon-[icon-park-outline--github] ml-2"></span>
