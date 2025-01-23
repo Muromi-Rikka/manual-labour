@@ -6,7 +6,7 @@ export function NewsItem(props: { data: NewsDataItem }) {
   const { data } = props;
   return (
     <div
-      className="text-red-500 w-full p-4 bg-white rounded drop-shadow-md flex flex-col justify-center items-center my-4"
+      className="text-red-500 w-full p-4 bg-white rounded-sm drop-shadow-md flex flex-col justify-center items-center my-4"
     >
       <div className="w-full flex flex-row justify-center items-center">
         <span className="icon-[ph--hash-straight-bold] mx-2"></span>
