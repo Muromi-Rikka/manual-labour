@@ -23,7 +23,7 @@ importers:
         version: 3.16.0(@typescript-eslint/utils@8.21.0(eslint@9.18.0(jiti@2.4.2))(typescript@5.7.3))(@vue/compiler-sfc@3.4.37)(eslint@9.18.0(jiti@2.4.2))(typescript@5.7.3)
       '@iconify/json':
         specifier: ^2.2.298
-        version: 2.2.299
+        version: 2.2.302
       '@iconify/tailwind4':
         specifier: ^1.0.1
         version: 1.0.1
@@ -122,13 +122,13 @@ packages:
     resolution: {integrity: sha512-Ed61U6XJc3CVRfkERJWDz4dJwKe7iLmmJsbOGu9wSloNSFttHV0I8g6UAgb7qnK5ly5bGLPd4oXZlxCdANBOWQ==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/parser@7.26.5':
-    resolution: {integrity: sha512-SRJ4jYmXRqV1/Xc+TIVG84WjHBXKlxO9sHQnA2Pf12QQEAp1LOh6kDzNHXcUnbH1QI0FDoPPVOt+vyUDucxpaw==}
+  '@babel/parser@7.26.7':
+    resolution: {integrity: sha512-kEvgGGgEjRUutvdVvZhbn/BxVt+5VSpwXz1j3WYXQbXDo8KzFOPNG2GQbdAiNq8g6wn1yKk7C/qrke03a84V+w==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
-  '@babel/types@7.26.5':
-    resolution: {integrity: sha512-L6mZmwFDK6Cjh1nRCLXpa6no13ZIioJDz7mdkzHv399pThrTa/k0nUlNaenOeh2kWu/iaOQYElEpKPUswUa9Vg==}
+  '@babel/types@7.26.7':
+    resolution: {integrity: sha512-t8kDRGrKXyp6+tjUh7hw2RLyclsW4TRoRvRHtSyAX9Bb5ldlFh+90YAYY6awRXrlB4G5G2izNeGySpATlFzmOg==}
     engines: {node: '>=6.9.0'}
 
   '@clack/core@0.4.1':
@@ -218,8 +218,8 @@ packages:
     resolution: {integrity: sha512-c7hNEllBlenFTHBky65mhq8WD2kbN9Q6gk0bTk8lSBvc554jpXSkST1iePudpt7+A/AQvuHs9EMqjHDXMY1lrA==}
     engines: {node: '>=18.18'}
 
-  '@iconify/json@2.2.299':
-    resolution: {integrity: sha512-YsHoXNK4tBfY1aABlnAxGv8BFNsXBRfTuhRqkXLC0AK+amM+IDPLpVyOPCttcEHKuAsmh0OVPsrCZe2bC0puTA==}
+  '@iconify/json@2.2.302':
+    resolution: {integrity: sha512-gklpnOBA3xLNW68cdQz6iI4UnRGIXb+se8UyQN1lzy4Si01XIHynGq2nTep01HQK/I1Ltgz2h6srnPGSDB8LhQ==}
 
   '@iconify/tailwind4@1.0.1':
     resolution: {integrity: sha512-mp8SJp4upbuHg3bYfK9QGA9Q6tfUP10qGtiNmTd+thM7L7GquvPDUMZPQbr3zNqzlTB7b/LO++qj9IpYpfigxQ==}
@@ -1816,11 +1816,11 @@ snapshots:
 
   '@babel/helper-validator-identifier@7.25.9': {}
 
-  '@babel/parser@7.26.5':
+  '@babel/parser@7.26.7':
     dependencies:
-      '@babel/types': 7.26.5
+      '@babel/types': 7.26.7
 
-  '@babel/types@7.26.5':
+  '@babel/types@7.26.7':
     dependencies:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
@@ -1925,7 +1925,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.1': {}
 
-  '@iconify/json@2.2.299':
+  '@iconify/json@2.2.302':
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 1.1.2
@@ -2242,7 +2242,7 @@ snapshots:
 
   '@vue/compiler-core@3.4.37':
     dependencies:
-      '@babel/parser': 7.26.5
+      '@babel/parser': 7.26.7
       '@vue/shared': 3.4.37
       entities: 5.0.0
       estree-walker: 2.0.2
@@ -2255,7 +2255,7 @@ snapshots:
 
   '@vue/compiler-sfc@3.4.37':
     dependencies:
-      '@babel/parser': 7.26.5
+      '@babel/parser': 7.26.7
       '@vue/compiler-core': 3.4.37
       '@vue/compiler-dom': 3.4.37
       '@vue/compiler-ssr': 3.4.37
