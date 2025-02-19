@@ -31,8 +31,8 @@ importers:
         specifier: 1.2.9
         version: 1.2.9
       '@rsbuild/plugin-react':
-        specifier: 1.1.0
-        version: 1.1.0(@rsbuild/core@1.2.9)
+        specifier: 1.1.1
+        version: 1.1.1(@rsbuild/core@1.2.9)
       '@tailwindcss/postcss':
         specifier: ^4.0.0
         version: 4.0.7
@@ -275,8 +275,8 @@ packages:
     engines: {node: '>=16.7.0'}
     hasBin: true
 
-  '@rsbuild/plugin-react@1.1.0':
-    resolution: {integrity: sha512-uqdRoV2V91G1XIA14dAmxqYTlTDVf0ktpE7TgwG29oQ2j+DerF1kh29WPHK9HvGE34JTfaBrsme2Zmb6bGD0cw==}
+  '@rsbuild/plugin-react@1.1.1':
+    resolution: {integrity: sha512-gkATKrOQauXMMtrYA5jbTQkhmYTE0VXoknPLtVpiXtwDbBUwgX23LFf1XJ51YOwqYpP7g5SfPEMgD2FENtCq0A==}
     peerDependencies:
       '@rsbuild/core': 1.x
 
@@ -344,8 +344,8 @@ packages:
     resolution: {integrity: sha512-VynGOEsVw2s8TAlLf/uESfrgfrq2+rcXB1muPJYBWbsm1Oa6r5qVQhjA5ggM6z/coYPrsVMgovl3Ff7Q7OCp1w==}
     engines: {node: '>=16.0.0'}
 
-  '@rspack/plugin-react-refresh@1.0.0':
-    resolution: {integrity: sha512-WvXkLewW5G0Mlo5H1b251yDh5FFiH4NDAbYlFpvFjcuXX2AchZRf9zdw57BDE/ADyWsJgA8kixN/zZWBTN3iYA==}
+  '@rspack/plugin-react-refresh@1.0.1':
+    resolution: {integrity: sha512-KSBc3bsr3mrAPViv7w9MpE9KEWm6q87EyRXyHlRfJ9PpQ56NbX9KZ7AXo7jPeECb0q5sfpM2PSEf+syBiMgLSw==}
     peerDependencies:
       react-refresh: '>=0.10.0 <1.0.0'
     peerDependenciesMeta:
@@ -1955,10 +1955,10 @@ snapshots:
     transitivePeerDependencies:
       - '@rspack/tracing'
 
-  '@rsbuild/plugin-react@1.1.0(@rsbuild/core@1.2.9)':
+  '@rsbuild/plugin-react@1.1.1(@rsbuild/core@1.2.9)':
     dependencies:
       '@rsbuild/core': 1.2.9
-      '@rspack/plugin-react-refresh': 1.0.0(react-refresh@0.16.0)
+      '@rspack/plugin-react-refresh': 1.0.1(react-refresh@0.16.0)
       react-refresh: 0.16.0
 
   '@rspack/binding-darwin-arm64@1.2.3':
@@ -2011,7 +2011,7 @@ snapshots:
 
   '@rspack/lite-tapable@1.0.1': {}
 
-  '@rspack/plugin-react-refresh@1.0.0(react-refresh@0.16.0)':
+  '@rspack/plugin-react-refresh@1.0.1(react-refresh@0.16.0)':
     dependencies:
       error-stack-parser: 2.1.4
       html-entities: 2.5.2
