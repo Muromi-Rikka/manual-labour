@@ -28,11 +28,11 @@ importers:
         specifier: ^1.0.1
         version: 1.0.3(tailwindcss@4.0.7)
       '@rsbuild/core':
-        specifier: 1.2.9
-        version: 1.2.9
+        specifier: 1.2.11
+        version: 1.2.11
       '@rsbuild/plugin-react':
         specifier: 1.1.1
-        version: 1.1.1(@rsbuild/core@1.2.9)
+        version: 1.1.1(@rsbuild/core@1.2.11)
       '@tailwindcss/postcss':
         specifier: ^4.0.0
         version: 4.0.7
@@ -270,8 +270,8 @@ packages:
     resolution: {integrity: sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
-  '@rsbuild/core@1.2.9':
-    resolution: {integrity: sha512-Y3b4Y7lGIvNPywspP38deHkp/EEkTXrJEHeX1K5yz8U/94PkWvPlDebjjiSvmI6TT+9iVzsq22qDlBEdDuJZhA==}
+  '@rsbuild/core@1.2.11':
+    resolution: {integrity: sha512-bsTtXlqJKoqnHwOZ05NePGpBf/neuwHTzJtQegQ9GA8YLyjow1wn8vPXFiRtYL0UqASEDtFtAm2bcaieg7r/TQ==}
     engines: {node: '>=16.7.0'}
     hasBin: true
 
@@ -1946,7 +1946,7 @@ snapshots:
 
   '@pkgr/core@0.1.1': {}
 
-  '@rsbuild/core@1.2.9':
+  '@rsbuild/core@1.2.11':
     dependencies:
       '@rspack/core': 1.2.3(@swc/helpers@0.5.15)
       '@rspack/lite-tapable': 1.0.1
@@ -1955,9 +1955,9 @@ snapshots:
     transitivePeerDependencies:
       - '@rspack/tracing'
 
-  '@rsbuild/plugin-react@1.1.1(@rsbuild/core@1.2.9)':
+  '@rsbuild/plugin-react@1.1.1(@rsbuild/core@1.2.11)':
     dependencies:
-      '@rsbuild/core': 1.2.9
+      '@rsbuild/core': 1.2.11
       '@rspack/plugin-react-refresh': 1.0.1(react-refresh@0.16.0)
       react-refresh: 0.16.0
 
