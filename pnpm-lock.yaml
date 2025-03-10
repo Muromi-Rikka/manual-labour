@@ -28,11 +28,11 @@ importers:
         specifier: ^1.0.1
         version: 1.0.6(tailwindcss@4.0.12)
       '@rsbuild/core':
-        specifier: 1.2.15
-        version: 1.2.15
+        specifier: 1.2.16
+        version: 1.2.16
       '@rsbuild/plugin-react':
         specifier: 1.1.1
-        version: 1.1.1(@rsbuild/core@1.2.15)
+        version: 1.1.1(@rsbuild/core@1.2.16)
       '@tailwindcss/postcss':
         specifier: ^4.0.0
         version: 4.0.12
@@ -274,8 +274,8 @@ packages:
     resolution: {integrity: sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
-  '@rsbuild/core@1.2.15':
-    resolution: {integrity: sha512-f17C4q3MoQ1G9CXzGkiZKZj3MHnV9oSovBjjQQ5bXVBICfGVyRHlHHCa5b9b40F67lbez2K6eLkLP9wU1j1Udw==}
+  '@rsbuild/core@1.2.16':
+    resolution: {integrity: sha512-LxiZUTKhg3ZHFIeZkDmrOG8pWn/lny4vx0AqtSxovWPDnFHgYeuL45rAGDfkrx4TuGwwDN3qJgbetPRSYA8cWw==}
     engines: {node: '>=16.7.0'}
     hasBin: true
 
@@ -611,9 +611,6 @@ packages:
   callsites@3.1.0:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
-
-  caniuse-lite@1.0.30001701:
-    resolution: {integrity: sha512-faRs/AW3jA9nTwmJBSO1PQ6L/EOgsB5HMQQq4iCu5zhPgVVgO/pZRHlmatwijZKetFw8/Pr4q6dEN8sJuq8qTw==}
 
   caniuse-lite@1.0.30001702:
     resolution: {integrity: sha512-LoPe/D7zioC0REI5W73PeR1e1MLCipRGq/VkovJnd6Df+QVqT+vT33OXCp8QUd7kA7RZrHWxb1B36OQKI/0gOA==}
@@ -1971,7 +1968,7 @@ snapshots:
 
   '@pkgr/core@0.1.1': {}
 
-  '@rsbuild/core@1.2.15':
+  '@rsbuild/core@1.2.16':
     dependencies:
       '@rspack/core': 1.2.7(@swc/helpers@0.5.15)
       '@rspack/lite-tapable': 1.0.1
@@ -1981,9 +1978,9 @@ snapshots:
     transitivePeerDependencies:
       - '@rspack/tracing'
 
-  '@rsbuild/plugin-react@1.1.1(@rsbuild/core@1.2.15)':
+  '@rsbuild/plugin-react@1.1.1(@rsbuild/core@1.2.16)':
     dependencies:
-      '@rsbuild/core': 1.2.15
+      '@rsbuild/core': 1.2.16
       '@rspack/plugin-react-refresh': 1.0.1(react-refresh@0.16.0)
       react-refresh: 0.16.0
 
@@ -2031,7 +2028,7 @@ snapshots:
       '@module-federation/runtime-tools': 0.8.4
       '@rspack/binding': 1.2.7
       '@rspack/lite-tapable': 1.0.1
-      caniuse-lite: 1.0.30001701
+      caniuse-lite: 1.0.30001702
     optionalDependencies:
       '@swc/helpers': 0.5.15
 
@@ -2323,8 +2320,6 @@ snapshots:
   cac@6.7.14: {}
 
   callsites@3.1.0: {}
-
-  caniuse-lite@1.0.30001701: {}
 
   caniuse-lite@1.0.30001702: {}
 
