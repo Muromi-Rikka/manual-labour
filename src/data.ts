@@ -82,3 +82,35 @@ export const NewsWebsiteList: Array<IWebsite> = [
   { type: "bilibili", label: "哔哩哔哩", url: "https://www.bilibili.com", search: "https://search.bilibili.com/all?keyword=" },
   { type: "toutiao", label: "今日头条", url: "https://www.toutiao.com/", search: "https://so.toutiao.com/search?dvpf=pc&source=input&keyword=" },
 ];
+export const NewsWebsiteListImonials = [
+  {
+    quote: "腾讯新闻作为综合新闻平台，覆盖全球热点、民生资讯等多领域内容，提供实时、全面的新闻报道服务。",
+    name: "腾讯新闻",
+    title: "综合新闻平台",
+  },
+  {
+    quote: "网易新闻以深度原创报道和多维度分析见长，聚焦社会热点与民生话题，打造有温度的资讯内容生态。",
+    name: "网易新闻",
+    title: "深度内容平台",
+  },
+  {
+    quote: "百度百家号汇聚海量创作者，涵盖科技、生活、职场等多元领域，为用户提供丰富的原创优质内容。",
+    name: "百度百家号",
+    title: "创作者内容平台",
+  },
+  {
+    quote: "搜狐新闻深耕资讯领域多年，覆盖新闻、娱乐、体育等全场景内容，致力于为用户提供可信的综合资讯服务。",
+    name: "搜狐新闻",
+    title: "综合资讯平台",
+  },
+  {
+    quote: "哔哩哔哩作为视频社区平台，通过UP主原创视频呈现体力劳动的真实场景，提供直观的岗位细节与工作日常。",
+    name: "哔哩哔哩",
+    title: "视频资讯社区",
+  },
+  {
+    quote: "今日头条基于智能推荐技术，精准推送体力劳动相关热点资讯，帮助用户快速获取行业动态与岗位信息。",
+    name: "今日头条",
+    title: "个性化推荐平台",
+  },
+];

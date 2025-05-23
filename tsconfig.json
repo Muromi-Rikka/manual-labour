@@ -4,8 +4,12 @@
     "jsx": "react-jsx",
     "lib": ["DOM", "ES2020"],
     "useDefineForClassFields": true,
+    "baseUrl": ".",
     "module": "ESNext",
     "moduleResolution": "bundler",
+    "paths": {
+      "@/*": ["./*"]
+    },
     "resolveJsonModule": true,
     "allowImportingTsExtensions": true,
     "strict": true,
