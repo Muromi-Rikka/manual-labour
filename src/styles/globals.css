@@ -5,7 +5,9 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
-
+html {
+  position: relative;
+}
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -146,6 +148,37 @@
   100% {
     background-position: 100% -100%;
     }
+  }
+  --animate-shiny-text: shiny-text 8s infinite;
+  @keyframes shiny-text {
+  0%, 90%, 100% {
+    background-position: calc(-100% - var(--shiny-width)) 0;
+    }
+  30%, 60% {
+    background-position: calc(100% + var(--shiny-width)) 0;
+    }
+  }
+  @keyframes line-shadow {
+  0% {
+    background-position: 0 0;
+    }
+  100% {
+    background-position: 100% -100%;
+    }
+  }
+  @keyframes line-shadow {
+  0% {
+    background-position: 0 0;
+    }
+  100% {
+    background-position: 100% -100%;
+    }
+  }
+  --animate-gradient: gradient 8s linear infinite;
+  @keyframes gradient {
+  to {
+    background-position: var(--bg-size, 300%) 0;
+    }
   }}
 
 @layer base {
@@ -159,7 +192,7 @@
 
 @theme inline {
   --animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
- 
+
   @keyframes scroll {
     to {
       transform: translate(calc(-50% - 0.5rem));

@@ -1,4 +1,11 @@
+import type { ReactNode } from "react";
 import type { IWebsite, LinkType, NewsDataLinkItem } from "./data.types.ts";
+import { IconBaidu } from "../components/icons/IconBaidu.tsx";
+import { IconsBilibili } from "../components/icons/IconBilibili.tsx";
+import { IconNetease } from "../components/icons/IconNetease.tsx";
+import { IconSouhu } from "../components/icons/IconSouhu.tsx";
+import { IconTencent } from "../components/icons/IconTencent.tsx";
+import { IconToutiao } from "../components/icons/IconToutiao.tsx";
 
 /**
  * 生成link
@@ -65,13 +72,13 @@ export function generateLinkList(list: Array<[LinkType, string]>): NewsDataLinkI
   return list.sort((x, y) => x[0].localeCompare(y[0])).map(item => generateLink(...item));
 }
 
-export const LinkTypeRecord: Record<LinkType, `icon-[${string}--${string}]`> = {
-  tencent: "icon-[simple-icons--tencentqq]",
-  netease: "icon-[simple-icons--neteasecloudmusic]",
-  baidu: "icon-[simple-icons--baidu]",
-  sohu: "icon-[emojione-monotone--fox]",
-  bilibili: "icon-[simple-icons--bilibili]",
-  toutiao: "icon-[icon-park-outline--jinritoutiao]",
+export const LinkTypeRecord: Record<LinkType, ReactNode> = {
+  tencent: <IconTencent width={24} height={24} className="text-gray-500" />,
+  netease: <IconNetease width={24} height={24} className="text-gray-500" />,
+  baidu: <IconBaidu width={24} height={24} className="text-gray-500" />,
+  sohu: <IconSouhu width={24} height={24} className="text-gray-500" />,
+  bilibili: <IconsBilibili width={24} height={24} className="text-gray-500" />,
+  toutiao: <IconToutiao width={24} height={24} className="text-gray-500" />,
 };
 
 export const NewsWebsiteList: Array<IWebsite> = [
