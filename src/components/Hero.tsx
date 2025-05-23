@@ -63,7 +63,7 @@ export function Hero() {
           <span className="text-lg">本站所表述的观点不代表本网站的立场。具体内容请点击相关新闻下的按钮以查看详细信息。</span>
         </motion.h1>
       </HeroHighlight>
-      <InfiniteMovingCards items={NewsWebsiteListImonials} speed="slow" />
+      <InfiniteMovingCards items={NewsWebsiteListImonials} speed="slow" className="mx-auto" />
     </>
   );
 }

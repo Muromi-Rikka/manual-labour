@@ -14,7 +14,7 @@ export function Footer() {
             speed={2}
             colorFrom="#4ade80"
             colorTo="#06b6d4"
-            className="text-4xl font-semibold tracking-tight"
+            className="text-lg font-semibold tracking-tight md:text-4xl"
           >
             诚邀您通过我们的平台发布更多优质高薪职位，为求职者点亮职业发展的新机遇！
           </AnimatedGradientText>
