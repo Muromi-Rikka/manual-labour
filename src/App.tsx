@@ -22,7 +22,7 @@ function App() {
     }) as Record<string, IJsonData[]>;
     return Object.keys(grouped)
       .map(key => ({
-        title: key,
+        title: key === "9999" ? "遥遥领先" : key,
         content: grouped[key].map(item => <TimeLineContent key={item.title} item={item} />),
       }))
       .sort((x, y) => x.title > y.title ? -1 : 1);
