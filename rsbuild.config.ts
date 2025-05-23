@@ -13,8 +13,10 @@ export default defineConfig({
     ],
   },
   tools: {
-    postcss: (opt, { addPlugins }) => {
-      addPlugins(tailwindcss);
+    postcss: {
+      postcssOptions: {
+        plugins: [tailwindcss],
+      },
     },
   },
 });

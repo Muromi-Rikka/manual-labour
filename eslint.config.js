@@ -6,4 +6,9 @@ export default antfu({
     semi: true,
   },
   jsonc: true,
+  markdown: true,
+  formatters: {
+    markdown: "prettier",
+    jsonc: "prettier",
+  },
 });

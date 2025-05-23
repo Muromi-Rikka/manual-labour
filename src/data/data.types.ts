@@ -23,3 +23,7 @@ export interface IJsonData {
   link: Array<[LinkType, string]>;
   date: number;
 }
+export interface IJsonResponse {
+  $schema: "./news.schema.json";
+  data: IJsonData[];
+}
