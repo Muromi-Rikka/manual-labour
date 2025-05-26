@@ -1,8 +1,11 @@
+import Clarity from "@microsoft/clarity";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./styles/globals.css";
+
+Clarity.init("rpet3mxos8");
 
 const queryClient = new QueryClient();
 
