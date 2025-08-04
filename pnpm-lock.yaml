@@ -82,8 +82,8 @@ importers:
         specifier: ^1.0.1
         version: 1.0.1(eslint@9.32.0(jiti@2.5.1))
       rsbuild-plugin-google-analytics:
-        specifier: ^1.0.3
-        version: 1.0.3(@rsbuild/core@1.4.13)
+        specifier: ^1.0.4
+        version: 1.0.4(@rsbuild/core@1.4.13)
       tailwindcss:
         specifier: ^4.1.11
         version: 4.1.11
@@ -2082,10 +2082,10 @@ packages:
     resolution: {integrity: sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
 
-  rsbuild-plugin-google-analytics@1.0.3:
-    resolution: {integrity: sha512-9AaubhqxiJ46yuBDkXtIjUnhMLUjGtMtRUeU9vkTrC4CfbJkHsHASwRJIRIxV7XMbr5Mwn/Ithh6lNh79RqehQ==}
+  rsbuild-plugin-google-analytics@1.0.4:
+    resolution: {integrity: sha512-K7KkgIUJWtoBpcCLBDLnBXezvQWdue5LCDO4NDvSDe/TEFxOlKb8wG6dDtp/A+CwbnZRVeNOZ9cB6vNg/y/Suw==}
     peerDependencies:
-      '@rsbuild/core': 0.x || 1.x || ^1.0.1-beta.0
+      '@rsbuild/core': 1.x
     peerDependenciesMeta:
       '@rsbuild/core':
         optional: true
@@ -4442,7 +4442,7 @@ snapshots:
 
   reusify@1.0.4: {}
 
-  rsbuild-plugin-google-analytics@1.0.3(@rsbuild/core@1.4.13):
+  rsbuild-plugin-google-analytics@1.0.4(@rsbuild/core@1.4.13):
     optionalDependencies:
       '@rsbuild/core': 1.4.13
 
