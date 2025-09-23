@@ -18,8 +18,8 @@ importers:
         specifier: ^1.3.2
         version: 1.3.2(react@19.1.1)
       '@reactuses/core':
-        specifier: ^6.0.6
-        version: 6.0.6(react@19.1.1)
+        specifier: ^6.0.7
+        version: 6.0.7(react@19.1.1)
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -652,8 +652,8 @@ packages:
   '@radix-ui/rect@1.1.1':
     resolution: {integrity: sha512-HPwpGIzkl28mWyZqG52jiqDJ12waP11Pa1lGoiyUkIEuMLBP0oeK/C89esbXrxsky5we7dfd8U58nm0SgAWpVw==}
 
-  '@reactuses/core@6.0.6':
-    resolution: {integrity: sha512-2tBQUHfMmGHhLlZNhb9uC/Ai82UnqRJC7N5V3ArMVbffkson3IPgQtPPdWIdBXTjvBnVlIRaMH11WA/W7Ovcag==}
+  '@reactuses/core@6.0.7':
+    resolution: {integrity: sha512-aGtlyQWxvnqWMqU0Lpjaw58H99XhKuu/aV9Py/XwoiUEUR4SJ8DQb8dP/SG33/y5A5N5+Q3y21BHyIhzY9lyBg==}
     peerDependencies:
       qrcode: ^1.5
       react: ^16.8.0  || ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -2925,7 +2925,7 @@ snapshots:
 
   '@radix-ui/rect@1.1.1': {}
 
-  '@reactuses/core@6.0.6(react@19.1.1)':
+  '@reactuses/core@6.0.7(react@19.1.1)':
     dependencies:
       '@microsoft/fetch-event-source': 2.0.1
       '@testing-library/dom': 10.4.0
