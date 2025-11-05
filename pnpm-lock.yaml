@@ -18,8 +18,8 @@ importers:
         specifier: ^1.3.2
         version: 1.3.2(react@19.2.0)
       '@reactuses/core':
-        specifier: ^6.1.2
-        version: 6.1.2(react@19.2.0)
+        specifier: ^6.1.5
+        version: 6.1.5(react@19.2.0)
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -161,10 +161,6 @@ packages:
 
   '@babel/helper-string-parser@7.25.9':
     resolution: {integrity: sha512-4A/SCr/2KLd5jrtOMFzaKjVtAei3+2r/NChoBNoZ3EyP/+GlhoaEGoWOZUmFmoITP7zOJyHIMm+DYRd8o3PvHA==}
-    engines: {node: '>=6.9.0'}
-
-  '@babel/helper-validator-identifier@7.27.1':
-    resolution: {integrity: sha512-D2hP9eA+Sqx1kBZgzxZh0y1trbuU+JoDkiEwqhQ36nodYqJwyEIhPSdMNd7lOm/4io72luTPWH20Yda0xOuUow==}
     engines: {node: '>=6.9.0'}
 
   '@babel/helper-validator-identifier@7.28.5':
@@ -651,8 +647,8 @@ packages:
   '@radix-ui/rect@1.1.1':
     resolution: {integrity: sha512-HPwpGIzkl28mWyZqG52jiqDJ12waP11Pa1lGoiyUkIEuMLBP0oeK/C89esbXrxsky5we7dfd8U58nm0SgAWpVw==}
 
-  '@reactuses/core@6.1.2':
-    resolution: {integrity: sha512-3QQkxCS642F6PGdjvw0LBQY6/26xvNPTc7WWstHTBlE9IMRo3j4/tzkFPbLn6quOwfbVmi1FPIm4+Onk/OnYHA==}
+  '@reactuses/core@6.1.5':
+    resolution: {integrity: sha512-9G5a/cdcFSIoSu3lw8xdJqbAgQmbyRjAC78HU+Unh/KYgsWOfpM4flodSL/rrsKhuyZXHBIU9Qf7yG5vCtENVA==}
     peerDependencies:
       qrcode: ^1.5
       react: ^16.8.0  || ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -2378,13 +2374,11 @@ snapshots:
 
   '@babel/code-frame@7.27.1':
     dependencies:
-      '@babel/helper-validator-identifier': 7.27.1
+      '@babel/helper-validator-identifier': 7.28.5
       js-tokens: 4.0.0
       picocolors: 1.1.1
 
   '@babel/helper-string-parser@7.25.9': {}
-
-  '@babel/helper-validator-identifier@7.27.1': {}
 
   '@babel/helper-validator-identifier@7.28.5': {}
 
@@ -2870,7 +2864,7 @@ snapshots:
 
   '@radix-ui/rect@1.1.1': {}
 
-  '@reactuses/core@6.1.2(react@19.2.0)':
+  '@reactuses/core@6.1.5(react@19.2.0)':
     dependencies:
       '@microsoft/fetch-event-source': 2.0.1
       '@testing-library/dom': 10.4.0
