@@ -31,14 +31,14 @@
     "@antfu/eslint-config": "^6.2.0",
     "@rsbuild/core": "1.6.2",
     "@rsbuild/plugin-react": "1.4.2",
-    "@tailwindcss/postcss": "^4.1.16",
+    "@tailwindcss/postcss": "^4.1.17",
     "@tanstack/react-query": "^5.90.7",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "eslint": "^9.39.1",
     "eslint-plugin-format": "^1.0.2",
     "rsbuild-plugin-google-analytics": "^1.0.4",
-    "tailwindcss": "^4.1.16",
+    "tailwindcss": "^4.1.17",
     "typescript": "^5.9.3"
   }
 }
