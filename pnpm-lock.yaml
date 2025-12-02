@@ -58,11 +58,11 @@ importers:
         specifier: ^6.2.0
         version: 6.2.0(@vue/compiler-sfc@3.4.37)(eslint-plugin-format@1.0.2(eslint@9.39.1(jiti@2.6.1)))(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
       '@rsbuild/core':
-        specifier: 1.6.10
-        version: 1.6.10
+        specifier: 1.6.11
+        version: 1.6.11
       '@rsbuild/plugin-react':
         specifier: 1.4.2
-        version: 1.4.2(@rsbuild/core@1.6.10)
+        version: 1.4.2(@rsbuild/core@1.6.11)
       '@tailwindcss/postcss':
         specifier: ^4.1.17
         version: 4.1.17
@@ -83,7 +83,7 @@ importers:
         version: 1.0.2(eslint@9.39.1(jiti@2.6.1))
       rsbuild-plugin-google-analytics:
         specifier: ^1.0.4
-        version: 1.0.4(@rsbuild/core@1.6.10)
+        version: 1.0.4(@rsbuild/core@1.6.11)
       tailwindcss:
         specifier: ^4.1.17
         version: 4.1.17
@@ -656,8 +656,8 @@ packages:
       qrcode:
         optional: true
 
-  '@rsbuild/core@1.6.10':
-    resolution: {integrity: sha512-gAdI+H/xUsuEQikKlFUsxbr2f3uXfLU+3Z73wdcaQcNcvfmS3K+6vMyNYn6UFuCL5LPtXG9lwgc8cycToHgm5g==}
+  '@rsbuild/core@1.6.11':
+    resolution: {integrity: sha512-H/OAavDKfa/10prrn++bNbe2KGBo1opglQIq6+G38Mzb+44BM0sv/kn78K2sk2wpfmv4MwljeF1NvczFq2ttzQ==}
     engines: {node: '>=18.12.0'}
     hasBin: true
 
@@ -2873,7 +2873,7 @@ snapshots:
       screenfull: 5.2.0
       use-sync-external-store: 1.5.0(react@19.2.0)
 
-  '@rsbuild/core@1.6.10':
+  '@rsbuild/core@1.6.11':
     dependencies:
       '@rspack/core': 1.6.5(@swc/helpers@0.5.17)
       '@rspack/lite-tapable': 1.1.0
@@ -2881,9 +2881,9 @@ snapshots:
       core-js: 3.47.0
       jiti: 2.6.1
 
-  '@rsbuild/plugin-react@1.4.2(@rsbuild/core@1.6.10)':
+  '@rsbuild/plugin-react@1.4.2(@rsbuild/core@1.6.11)':
     dependencies:
-      '@rsbuild/core': 1.6.10
+      '@rsbuild/core': 1.6.11
       '@rspack/plugin-react-refresh': 1.5.2(react-refresh@0.18.0)
       react-refresh: 0.18.0
     transitivePeerDependencies:
@@ -4460,9 +4460,9 @@ snapshots:
 
   reusify@1.0.4: {}
 
-  rsbuild-plugin-google-analytics@1.0.4(@rsbuild/core@1.6.10):
+  rsbuild-plugin-google-analytics@1.0.4(@rsbuild/core@1.6.11):
     optionalDependencies:
-      '@rsbuild/core': 1.6.10
+      '@rsbuild/core': 1.6.11
 
   run-parallel@1.2.0:
     dependencies:
