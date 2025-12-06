@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^6.4.2",
-    "@rsbuild/core": "1.6.12",
+    "@rsbuild/core": "1.6.13",
     "@rsbuild/plugin-react": "1.4.2",
     "@tailwindcss/postcss": "^4.1.17",
     "@tanstack/react-query": "^5.90.12",
