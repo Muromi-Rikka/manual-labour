@@ -58,11 +58,11 @@ importers:
         specifier: ^6.4.2
         version: 6.4.2(@vue/compiler-sfc@3.4.37)(eslint-plugin-format@1.1.0(eslint@9.39.1(jiti@2.6.1)))(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
       '@rsbuild/core':
-        specifier: 1.6.12
-        version: 1.6.12
+        specifier: 1.6.13
+        version: 1.6.13
       '@rsbuild/plugin-react':
         specifier: 1.4.2
-        version: 1.4.2(@rsbuild/core@1.6.12)
+        version: 1.4.2(@rsbuild/core@1.6.13)
       '@tailwindcss/postcss':
         specifier: ^4.1.17
         version: 4.1.17
@@ -83,7 +83,7 @@ importers:
         version: 1.1.0(eslint@9.39.1(jiti@2.6.1))
       rsbuild-plugin-google-analytics:
         specifier: ^1.0.4
-        version: 1.0.4(@rsbuild/core@1.6.12)
+        version: 1.0.4(@rsbuild/core@1.6.13)
       tailwindcss:
         specifier: ^4.1.17
         version: 4.1.17
@@ -640,8 +640,8 @@ packages:
       qrcode:
         optional: true
 
-  '@rsbuild/core@1.6.12':
-    resolution: {integrity: sha512-gHwDfAMMgK2Zu9JgiekX949F262g6yYY+/ZLTIaMXHZmqYLAgsu0XOeVogpfQa045xcnwcQfpieiB9zgukJSgw==}
+  '@rsbuild/core@1.6.13':
+    resolution: {integrity: sha512-7Isd9G6ufIK5+kPCH8OhvVAVD5clsak9bp9IfhyEWT8SH43cLuXsUpK+4w0a6JA/kM98ea7KJEigIuCHJ5wAag==}
     engines: {node: '>=18.12.0'}
     hasBin: true
 
@@ -2788,7 +2788,7 @@ snapshots:
       screenfull: 5.2.0
       use-sync-external-store: 1.5.0(react@19.2.1)
 
-  '@rsbuild/core@1.6.12':
+  '@rsbuild/core@1.6.13':
     dependencies:
       '@rspack/core': 1.6.6(@swc/helpers@0.5.17)
       '@rspack/lite-tapable': 1.1.0
@@ -2796,9 +2796,9 @@ snapshots:
       core-js: 3.47.0
       jiti: 2.6.1
 
-  '@rsbuild/plugin-react@1.4.2(@rsbuild/core@1.6.12)':
+  '@rsbuild/plugin-react@1.4.2(@rsbuild/core@1.6.13)':
     dependencies:
-      '@rsbuild/core': 1.6.12
+      '@rsbuild/core': 1.6.13
       '@rspack/plugin-react-refresh': 1.5.2(react-refresh@0.18.0)
       react-refresh: 0.18.0
     transitivePeerDependencies:
@@ -4336,9 +4336,9 @@ snapshots:
 
   resolve-pkg-maps@1.0.0: {}
 
-  rsbuild-plugin-google-analytics@1.0.4(@rsbuild/core@1.6.12):
+  rsbuild-plugin-google-analytics@1.0.4(@rsbuild/core@1.6.13):
     optionalDependencies:
-      '@rsbuild/core': 1.6.12
+      '@rsbuild/core': 1.6.13
 
   scheduler@0.27.0: {}
 
