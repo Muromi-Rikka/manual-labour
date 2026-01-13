@@ -30,8 +30,8 @@ importers:
         specifier: ^0.562.0
         version: 0.562.0(react@19.2.3)
       motion:
-        specifier: ^12.25.0
-        version: 12.25.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+        specifier: ^12.26.2
+        version: 12.26.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       next-themes:
         specifier: ^0.4.6
         version: 0.4.6(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
@@ -1470,8 +1470,8 @@ packages:
     resolution: {integrity: sha512-wzsgA6WOq+09wrU1tsJ09udeR/YZRaeArL9e1wPbFg3GG2yDnC2ldKpxs4xunpFF9DgqCqOIra3bc1HWrJ37Ww==}
     engines: {node: '>=0.4.x'}
 
-  framer-motion@12.25.0:
-    resolution: {integrity: sha512-mlWqd0rApIjeyhTCSNCqPYsUAEhkcUukZxH3ke6KbstBRPcxhEpuIjmiUQvB+1E9xkEm5SpNHBgHCapH/QHTWg==}
+  framer-motion@12.26.2:
+    resolution: {integrity: sha512-lflOQEdjquUi9sCg5Y1LrsZDlsjrHw7m0T9Yedvnk7Bnhqfkc89/Uha10J3CFhkL+TCZVCRw9eUGyM/lyYhXQA==}
     peerDependencies:
       '@emotion/is-prop-valid': '*'
       react: ^18.0.0 || ^19.0.0
@@ -1854,14 +1854,14 @@ packages:
   mlly@1.7.4:
     resolution: {integrity: sha512-qmdSIPC4bDJXgZTCR7XosJiNKySV7O215tsPtDN9iEO/7q/76b/ijtgRu/+epFXSJhijtTCCGp3DWS549P3xKw==}
 
-  motion-dom@12.24.11:
-    resolution: {integrity: sha512-DlWOmsXMJrV8lzZyd+LKjG2CXULUs++bkq8GZ2Sr0R0RRhs30K2wtY+LKiTjhmJU3W61HK+rB0GLz6XmPvTA1A==}
+  motion-dom@12.26.2:
+    resolution: {integrity: sha512-KLMT1BroY8oKNeliA3JMNJ+nbCIsTKg6hJpDb4jtRAJ7nCKnnpg/LTq/NGqG90Limitz3kdAnAVXecdFVGlWTw==}
 
   motion-utils@12.24.10:
     resolution: {integrity: sha512-x5TFgkCIP4pPsRLpKoI86jv/q8t8FQOiM/0E8QKBzfMozWHfkKap2gA1hOki+B5g3IsBNpxbUnfOum1+dgvYww==}
 
-  motion@12.25.0:
-    resolution: {integrity: sha512-jBFohEYklpZ+TL64zv03sHdqr1Tsc8/yDy7u68hVzi7hTJYtv53AduchqCiY3aWi4vY1hweS8DWtgCuckusYdQ==}
+  motion@12.26.2:
+    resolution: {integrity: sha512-2Q6g0zK1gUJKhGT742DAe42LgietcdiJ3L3OcYAHCQaC1UkLnn6aC8S/obe4CxYTLAgid2asS1QdQ/blYfo5dw==}
     peerDependencies:
       '@emotion/is-prop-valid': '*'
       react: ^18.0.0 || ^19.0.0
@@ -3728,9 +3728,9 @@ snapshots:
 
   format@0.2.2: {}
 
-  framer-motion@12.25.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
+  framer-motion@12.26.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
     dependencies:
-      motion-dom: 12.24.11
+      motion-dom: 12.26.2
       motion-utils: 12.24.10
       tslib: 2.8.1
     optionalDependencies:
@@ -4237,15 +4237,15 @@ snapshots:
       pkg-types: 1.3.1
       ufo: 1.6.1
 
-  motion-dom@12.24.11:
+  motion-dom@12.26.2:
     dependencies:
       motion-utils: 12.24.10
 
   motion-utils@12.24.10: {}
 
-  motion@12.25.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
+  motion@12.26.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
     dependencies:
-      framer-motion: 12.25.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      framer-motion: 12.26.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       tslib: 2.8.1
     optionalDependencies:
       react: 19.2.3
