@@ -28,7 +28,7 @@
     "usehooks-ts": "^3.1.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^6.7.3",
+    "@antfu/eslint-config": "^7.0.0",
     "@rsbuild/core": "1.7.2",
     "@rsbuild/plugin-react": "1.4.2",
     "@tailwindcss/postcss": "^4.1.18",
