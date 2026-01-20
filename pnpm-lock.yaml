@@ -18,8 +18,8 @@ importers:
         specifier: ^1.3.2
         version: 1.3.2(react@19.2.3)
       '@reactuses/core':
-        specifier: ^6.1.9
-        version: 6.1.9(react@19.2.3)
+        specifier: ^6.1.11
+        version: 6.1.11(react@19.2.3)
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -641,8 +641,8 @@ packages:
   '@radix-ui/rect@1.1.1':
     resolution: {integrity: sha512-HPwpGIzkl28mWyZqG52jiqDJ12waP11Pa1lGoiyUkIEuMLBP0oeK/C89esbXrxsky5we7dfd8U58nm0SgAWpVw==}
 
-  '@reactuses/core@6.1.9':
-    resolution: {integrity: sha512-ahXOyJ92RvhYMvgXaKXqrSzIz0H2SUNaFy3zbrcmgfs4H46rOGTsxoy+ObxjXCogp6uZFYaFumSMO0u/xWcQMg==}
+  '@reactuses/core@6.1.11':
+    resolution: {integrity: sha512-MB5QX21xKMWaHKyrydJRdd4eUmZmVWtlm8y+f127KukgccJEHLZdHhoqt8s4ekjulegPv1cYi49A6zSBbCgzQQ==}
     peerDependencies:
       qrcode: ^1.5
       react: ^16.8.0  || ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -2818,7 +2818,7 @@ snapshots:
 
   '@radix-ui/rect@1.1.1': {}
 
-  '@reactuses/core@6.1.9(react@19.2.3)':
+  '@reactuses/core@6.1.11(react@19.2.3)':
     dependencies:
       '@microsoft/fetch-event-source': 2.0.1
       js-cookie: 3.0.5
