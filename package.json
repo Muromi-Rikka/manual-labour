@@ -30,7 +30,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^7.2.0",
     "@rsbuild/core": "1.7.2",
-    "@rsbuild/plugin-react": "1.4.3",
+    "@rsbuild/plugin-react": "1.4.5",
     "@tailwindcss/postcss": "^4.1.18",
     "@tanstack/react-query": "^5.90.20",
     "@types/react": "^19.2.10",
