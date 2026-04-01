@@ -40,6 +40,6 @@
     "jiti": "^2.6.1",
     "rsbuild-plugin-google-analytics": "^1.0.5",
     "tailwindcss": "^4.2.2",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.2"
   }
 }
