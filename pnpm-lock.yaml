@@ -58,11 +58,11 @@ importers:
         specifier: ^9.2.0
         version: 9.2.0(@typescript-eslint/typescript-estree@8.65.0(typescript@7.0.2))(@typescript-eslint/utils@8.65.0(eslint@10.8.0(jiti@2.7.0))(typescript@7.0.2))(@vue/compiler-sfc@3.5.30)(eslint-plugin-format@2.0.1(eslint@10.8.0(jiti@2.7.0)))(eslint@10.8.0(jiti@2.7.0))(typescript@7.0.2)
       '@rsbuild/core':
-        specifier: 2.1.7
-        version: 2.1.7
+        specifier: 2.1.8
+        version: 2.1.8
       '@rsbuild/plugin-react':
         specifier: 2.1.0
-        version: 2.1.0(@rsbuild/core@2.1.7)(@rspack/core@2.1.5(@swc/helpers@0.5.23))
+        version: 2.1.0(@rsbuild/core@2.1.8)(@rspack/core@2.1.5(@swc/helpers@0.5.23))
       '@tailwindcss/postcss':
         specifier: ^4.3.3
         version: 4.3.3
@@ -86,7 +86,7 @@ importers:
         version: 2.7.0
       rsbuild-plugin-google-analytics:
         specifier: ^1.0.6
-        version: 1.0.6(@rsbuild/core@2.1.7)
+        version: 1.0.6(@rsbuild/core@2.1.8)
       tailwindcss:
         specifier: ^4.3.3
         version: 4.3.3
@@ -752,8 +752,8 @@ packages:
       qrcode:
         optional: true
 
-  '@rsbuild/core@2.1.7':
-    resolution: {integrity: sha512-Xhs8DkLw2Vk5ydwjNG3GMJe1h03lqlCO4dV9EOG9HSR6vDfh07K48aq3KJ8/ncEL/YuFBaCIJrVc7rMFoR1y7Q==}
+  '@rsbuild/core@2.1.8':
+    resolution: {integrity: sha512-Y70LMcCZspVoQ7Oip1W2Agu5wVhWZ2x3cYl4s9GLQG4VYphBud53DY/jkrqkyQF8ASYZDDDrW2KWNFj0kNLLuA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -3106,19 +3106,19 @@ snapshots:
       screenfull: 5.2.0
       use-sync-external-store: 1.6.0(react@19.2.8)
 
-  '@rsbuild/core@2.1.7':
+  '@rsbuild/core@2.1.8':
     dependencies:
       '@rspack/core': 2.1.5(@swc/helpers@0.5.23)
       '@swc/helpers': 0.5.23
     transitivePeerDependencies:
       - '@module-federation/runtime-tools'
 
-  '@rsbuild/plugin-react@2.1.0(@rsbuild/core@2.1.7)(@rspack/core@2.1.5(@swc/helpers@0.5.23))':
+  '@rsbuild/plugin-react@2.1.0(@rsbuild/core@2.1.8)(@rspack/core@2.1.5(@swc/helpers@0.5.23))':
     dependencies:
       '@rspack/plugin-react-refresh': 2.0.2(@rspack/core@2.1.5(@swc/helpers@0.5.23))(react-refresh@0.18.0)
       react-refresh: 0.18.0
     optionalDependencies:
-      '@rsbuild/core': 2.1.7
+      '@rsbuild/core': 2.1.8
     transitivePeerDependencies:
       - '@rspack/core'
 
@@ -4775,9 +4775,9 @@ snapshots:
 
   resolve-pkg-maps@1.0.0: {}
 
-  rsbuild-plugin-google-analytics@1.0.6(@rsbuild/core@2.1.7):
+  rsbuild-plugin-google-analytics@1.0.6(@rsbuild/core@2.1.8):
     optionalDependencies:
-      '@rsbuild/core': 2.1.7
+      '@rsbuild/core': 2.1.8
 
   scheduler@0.27.0: {}
 
