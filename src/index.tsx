@@ -9,9 +9,9 @@ Clarity.init("rpet3mxos8");
 
 const queryClient = new QueryClient();
 
-const rootEl = document.getElementById("root");
-if (rootEl) {
-  const root = ReactDOM.createRoot(rootEl);
+const rootElement = document.querySelector("#root");
+if (rootElement) {
+  const root = ReactDOM.createRoot(rootElement);
   root.render(
     <React.StrictMode>
       <QueryClientProvider client={queryClient}>

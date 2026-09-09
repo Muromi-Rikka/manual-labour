@@ -1,21 +1,26 @@
+import type { MotionProps } from "motion/react";
+import { motion } from "motion/react";
+import { useMemo } from "react";
 import { cn } from "@/lib/utils";
-import { motion, MotionProps } from "motion/react";
 
-interface LineShadowTextProps
-  extends Omit<React.HTMLAttributes<HTMLElement>, keyof MotionProps>,
-    MotionProps {
-  shadowColor?: string;
+const createMotionComponent = (component: React.ElementType) => motion.create(component);
+
+interface LineShadowTextProperties
+  extends MotionProps,
+  Omit<React.HTMLAttributes<HTMLElement>, keyof MotionProps> {
   as?: React.ElementType;
+  shadowColor?: string;
 }
 
+/* eslint-disable react/static-components */
 export function LineShadowText({
-  children,
-  shadowColor = "black",
-  className,
   as: Component = "span",
-  ...props
-}: LineShadowTextProps) {
-  const MotionComponent = motion.create(Component);
+  children,
+  className,
+  shadowColor = "black",
+  ...properties
+}: LineShadowTextProperties) {
+  const MotionComponent = useMemo(() => createMotionComponent(Component), [Component]);
   const content = typeof children === "string" ? children : null;
 
   if (!content) {
@@ -24,7 +29,6 @@ export function LineShadowText({
 
   return (
     <MotionComponent
-      style={{ "--shadow-color": shadowColor } as React.CSSProperties}
       className={cn(
         "relative z-0 inline-flex",
         "after:absolute after:left-[0.04em] after:top-[0.04em] after:content-[attr(data-text)]",
@@ -34,9 +38,11 @@ export function LineShadowText({
         className,
       )}
       data-text={content}
-      {...props}
+      style={{ "--shadow-color": shadowColor } as React.CSSProperties}
+      {...properties}
     >
       {content}
     </MotionComponent>
   );
 }
+/* eslint-enable react/static-components */

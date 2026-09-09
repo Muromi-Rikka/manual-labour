@@ -1,14 +1,28 @@
-import antfu from "@antfu/eslint-config";
+import { rentonReact } from "@renton/eslint-config-react";
 
-export default antfu({
-  stylistic: {
-    quotes: "double",
-    semi: true,
+export default rentonReact(
+  {
+    stylistic: {
+      quotes: "double",
+      semi: true,
+    },
+    markdown: true,
+    jsonc: true,
+    test: true,
+    typescript: true,
+    yaml: true,
+    formatters: {
+      markdown: "prettier",
+      jsonc: "prettier",
+    },
   },
-  jsonc: true,
-  markdown: true,
-  formatters: {
-    markdown: "prettier",
-    jsonc: "prettier",
+  {
+    ignores: [".superpowers/**"],
   },
-});
+  {
+    rules: {
+      "pnpm/yaml-enforce-settings": "off",
+      "unicorn/filename-case": "off",
+    },
+  },
+);

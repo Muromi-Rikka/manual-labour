@@ -11,10 +11,10 @@ export function Footer() {
       <div className="mb-4 flex flex-col justify-center items-center">
         <div className="mb-4">
           <AnimatedGradientText
-            speed={2}
+            className="text-lg font-semibold tracking-tight md:text-4xl"
             colorFrom="#4ade80"
             colorTo="#06b6d4"
-            className="text-lg font-semibold tracking-tight md:text-4xl"
+            speed={2}
           >
             诚邀您通过我们的平台发布更多优质高薪职位，为求职者点亮职业发展的新机遇！
           </AnimatedGradientText>
@@ -25,7 +25,7 @@ export function Footer() {
 
           >
             <div className="flex flex-row justify-center items-center">
-              <IconParkOutlineGithub width={24} height={24} />
+              <IconParkOutlineGithub height={24} width={24} />
               <span className="ml-2">欢迎投稿</span>
             </div>
           </InteractiveHoverButton>
@@ -45,11 +45,11 @@ export function Footer() {
       </div>
       <FlickeringGrid
         className="absolute inset-0 z-0 size-full opacity-35"
-        squareSize={4}
-        gridGap={6}
         color="#6B7280"
-        maxOpacity={0.5}
         flickerChance={0.1}
+        gridGap={6}
+        maxOpacity={0.5}
+        squareSize={4}
       />
     </div>
   );

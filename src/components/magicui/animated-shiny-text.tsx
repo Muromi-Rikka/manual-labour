@@ -2,24 +2,19 @@ import type { ComponentPropsWithoutRef, CSSProperties, FC } from "react";
 
 import { cn } from "@/lib/utils";
 
-export interface AnimatedShinyTextProps
+export interface AnimatedShinyTextProperties
   extends ComponentPropsWithoutRef<"span"> {
   shimmerWidth?: number;
 }
 
-export const AnimatedShinyText: FC<AnimatedShinyTextProps> = ({
+export const AnimatedShinyText: FC<AnimatedShinyTextProperties> = ({
   children,
   className,
   shimmerWidth = 100,
-  ...props
+  ...properties
 }) => {
   return (
     <span
-      style={
-        {
-          "--shiny-width": `${shimmerWidth}px`,
-        } as CSSProperties
-      }
       className={cn(
         "mx-auto max-w-md text-neutral-600/70 dark:text-neutral-400/70",
 
@@ -31,7 +26,12 @@ export const AnimatedShinyText: FC<AnimatedShinyTextProps> = ({
 
         className,
       )}
-      {...props}
+      style={
+        {
+          "--shiny-width": `${shimmerWidth}px`,
+        } as CSSProperties
+      }
+      {...properties}
     >
       {children}
     </span>
