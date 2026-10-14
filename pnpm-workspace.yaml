@@ -1,9 +1,10 @@
 minimumReleaseAgeExclude:
-  - lucide-react@1.43.0
-  - motion@13.5.0
-  - motion-dom@13.5.0
-  - motion-utils@13.5.0
-  - framer-motion@13.5.0
+  - lucide-react@1.43.0 || 1.57.0
+  - "@rsbuild/core@2.2.13"
+  - motion@13.5.0 || 14.2.0
+  - motion-dom@13.5.0 || 14.2.0
+  - motion-utils@13.5.0 || 14.2.0
+  - framer-motion@13.5.0 || 14.2.0
 onlyBuiltDependencies:
   - "@tailwindcss/oxide"
   - core-js
