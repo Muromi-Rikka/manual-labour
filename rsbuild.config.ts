@@ -4,10 +4,6 @@ import tailwindcss from "@tailwindcss/postcss";
 import { pluginGoogleAnalytics } from "rsbuild-plugin-google-analytics";
 
 export default defineConfig({
-  plugins: [
-    pluginReact(),
-    pluginGoogleAnalytics({ id: "G-N6QN9WSE0Y" }),
-  ],
   html: {
     title: "相关高薪体力活热搜",
   },
@@ -16,6 +12,10 @@ export default defineConfig({
       { from: "./public", to: "./public" },
     ],
   },
+  plugins: [
+    pluginReact(),
+    pluginGoogleAnalytics({ id: "G-N6QN9WSE0Y" }),
+  ],
   tools: {
     postcss: {
       postcssOptions: {

@@ -5,17 +5,21 @@ import { cn } from "@/lib/utils";
 interface InteractiveHoverButtonProperties
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
 
-export const InteractiveHoverButton = React.forwardRef<
-  HTMLButtonElement,
-  InteractiveHoverButtonProperties
->(({ children, className, ...properties }, reference) => {
+export function InteractiveHoverButton({
+  children,
+  className,
+  ref,
+  ...properties
+}: InteractiveHoverButtonProperties & {
+  ref?: React.Ref<HTMLButtonElement>;
+}) {
   return (
     <button
       className={cn(
         "group relative w-auto cursor-pointer overflow-hidden rounded-full border bg-background p-2 px-6 text-center font-semibold",
         className,
       )}
-      ref={reference}
+      ref={ref}
       {...properties}
     >
       <div className="flex items-center gap-2">
@@ -30,6 +34,4 @@ export const InteractiveHoverButton = React.forwardRef<
       </div>
     </button>
   );
-});
-
-InteractiveHoverButton.displayName = "InteractiveHoverButton";
+}

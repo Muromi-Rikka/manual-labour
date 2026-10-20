@@ -2,19 +2,19 @@ import { rentonReact } from "@renton/eslint-config-react";
 
 export default rentonReact(
   {
+    formatters: {
+      jsonc: "prettier",
+      markdown: "prettier",
+    },
+    jsonc: true,
+    markdown: true,
     stylistic: {
       quotes: "double",
       semi: true,
     },
-    markdown: true,
-    jsonc: true,
     test: true,
     typescript: true,
     yaml: true,
-    formatters: {
-      markdown: "prettier",
-      jsonc: "prettier",
-    },
   },
   {
     ignores: [".superpowers/**"],
@@ -22,6 +22,7 @@ export default rentonReact(
   {
     rules: {
       "pnpm/yaml-enforce-settings": "off",
+      "react/naming-convention-ref-name": "off",
       "unicorn/filename-case": "off",
     },
   },

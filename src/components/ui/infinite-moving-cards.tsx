@@ -22,10 +22,6 @@ export function InfiniteMovingCards({
 }) {
   const containerReference = React.useRef<HTMLDivElement>(null);
   const scrollerReference = React.useRef<HTMLUListElement>(null);
-
-  useEffect(() => {
-    addAnimation();
-  }, []);
   const [start, setStart] = useState(false);
   const getDirection = () => {
     if (containerReference.current) {
@@ -56,7 +52,8 @@ export function InfiniteMovingCards({
       }
     }
   };
-  function addAnimation() {
+
+  useEffect(() => {
     if (!(containerReference.current && scrollerReference.current)) {
       return;
     }
@@ -73,7 +70,8 @@ export function InfiniteMovingCards({
     getDirection();
     getSpeed();
     setStart(true);
-  }
+    // eslint-disable-next-line react-hooks/exhaustive-deps, react/exhaustive-deps -- mount-only animation setup
+  }, []);
 
   return (
     <div

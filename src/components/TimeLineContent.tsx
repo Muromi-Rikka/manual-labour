@@ -30,10 +30,7 @@ export function TimeLineContent(properties: TimeLineContentProperties) {
               className="border border-solid border-gray-400 p-1 rounded mr-2 cursor-pointer"
               key={type}
               onClick={() => {
-                if (url)
-                  window.open(url);
-                else
-                  window.open(searchRecord[type] + item.title);
+                window.open(url || searchRecord[type] + item.title);
               }}
             >
               {LinkTypeRecord[type]}

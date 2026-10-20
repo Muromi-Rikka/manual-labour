@@ -5,6 +5,12 @@ minimumReleaseAgeExclude:
   - motion-dom@13.5.0 || 14.2.0
   - motion-utils@13.5.0 || 14.2.0
   - framer-motion@13.5.0 || 14.2.0
+  - "@renton/eslint-config-frontend@1.1.1"
+  - "@renton/eslint-config-react@1.2.0"
+  - "@renton/eslint-config@1.2.0"
+  - "@tanstack/query-core@5.104.5"
+  - "@tanstack/react-query@5.104.5"
+
 onlyBuiltDependencies:
   - "@tailwindcss/oxide"
   - core-js
