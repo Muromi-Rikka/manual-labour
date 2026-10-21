@@ -1,10 +1,10 @@
 minimumReleaseAgeExclude:
-  - lucide-react@1.43.0 || 1.57.0
+  - lucide-react@1.43.0 || 1.57.0 || 1.61.0
   - "@rsbuild/core@2.2.13"
-  - motion@13.5.0 || 14.2.0
-  - motion-dom@13.5.0 || 14.2.0
+  - motion@13.5.0 || 14.2.0 || 14.5.0
+  - motion-dom@13.5.0 || 14.2.0 || 14.5.0
   - motion-utils@13.5.0 || 14.2.0
-  - framer-motion@13.5.0 || 14.2.0
+  - framer-motion@13.5.0 || 14.2.0 || 14.5.0
   - "@renton/eslint-config-frontend@1.1.1 || 1.2.1"
   - "@renton/eslint-config-react@1.2.0 || 1.2.1"
   - "@renton/eslint-config@1.2.0 || 1.2.1"
