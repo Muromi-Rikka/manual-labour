@@ -37,7 +37,7 @@
     "@types/react-dom": "^19.3.0",
     "eslint": "^10.13.0",
     "jiti": "^2.7.0",
-    "rsbuild-plugin-google-analytics": "^1.0.6",
+    "rsbuild-plugin-google-analytics": "^1.1.0",
     "tailwindcss": "^4.3.3",
     "typescript": "6.0.3"
   }
