@@ -20,9 +20,9 @@ export default rentonReact(
     ignores: [".superpowers/**"],
   },
   {
+    files: ["**/*.?([cm])[jt]s?(x)"],
     rules: {
-      "pnpm/yaml-enforce-settings": "off",
-      "unicorn/filename-case": "off",
+      "unicorn/filename-case": ["error", { cases: { kebabCase: true, pascalCase: true } }], // React 组件文件按仓库约定 PascalCase
     },
   },
 );
