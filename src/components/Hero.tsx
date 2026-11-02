@@ -57,7 +57,11 @@ export function Hero() {
                 {website.label}
                 》
               </Highlight>
-              <span className="text-lg">{NewsWebsiteList.length - 1 > index ? "、" : "。"}</span>
+              <span className="text-lg">
+                {NewsWebsiteList.length - 1 > index
+                  ? "、"
+                  : "。"}
+              </span>
             </span>
           ))}
           <span className="text-lg">本站所表述的观点不代表本网站的立场。具体内容请点击相关新闻下的按钮以查看详细信息。</span>

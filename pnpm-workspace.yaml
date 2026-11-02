@@ -1,12 +1,9 @@
 
 minimumReleaseAge: 0
 minimumReleaseAgeExcludePrune: true
-minimumReleaseAgeExclude:
-  - "@renton/eslint-config-frontend@1.2.1"
-  - "@renton/eslint-config-react@1.2.1"
-  - "@renton/eslint-config@1.2.1"
 
 trustPolicy: no-downgrade
+trustPolicyExcludePrune: true
 trustPolicyExclude:
   - semver
 

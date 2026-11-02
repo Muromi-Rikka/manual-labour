@@ -23,7 +23,9 @@ function App() {
     return Object.entries(grouped)
       .map(([key, value]) => ({
         content: value.map(item => <TimeLineContent item={item} key={item.title} />),
-        title: key === "9999" ? "遥遥领先" : key,
+        title: key === "9999"
+          ? "遥遥领先"
+          : key,
       }))
       .toSorted((x, y) => x.title.localeCompare(y.title));
   }, [newsData]);

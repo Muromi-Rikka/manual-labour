@@ -21,7 +21,9 @@ export function LineShadowText({
   ...properties
 }: LineShadowTextProperties) {
   const MotionComponent = useMemo(() => createMotionComponent(Component), [Component]);
-  const content = typeof children === "string" ? children : null;
+  const content = typeof children === "string"
+    ? children
+    : null;
 
   if (!content) {
     throw new Error("LineShadowText only accepts string content");

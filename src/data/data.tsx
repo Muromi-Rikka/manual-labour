@@ -89,12 +89,42 @@ export const LinkTypeRecord: Record<LinkType, ReactNode> = {
 };
 
 export const NewsWebsiteList: Array<IWebsite> = [
-  { label: "腾讯新闻", search: "https://new.qq.com/search?query=", type: "tencent", url: "https://news.qq.com/" },
-  { label: "网易新闻", search: "https://www.163.com/search?keyword=", type: "netease", url: "https://www.163.com/" },
-  { label: "百度百家号", search: "https://www.baidu.com/s?rsv_dl=feed_landingpage_ib&wd=", type: "baidu", url: "https://baijiahao.baidu.com/" },
-  { label: "搜狐新闻", search: "https://search.sohu.com/?keyword=", type: "sohu", url: "https://www.sohu.com" },
-  { label: "哔哩哔哩", search: "https://search.bilibili.com/all?keyword=", type: "bilibili", url: "https://www.bilibili.com" },
-  { label: "今日头条", search: "https://so.toutiao.com/search?dvpf=pc&source=input&keyword=", type: "toutiao", url: "https://www.toutiao.com/" },
+  {
+    label: "腾讯新闻",
+    search: "https://new.qq.com/search?query=",
+    type: "tencent",
+    url: "https://news.qq.com/",
+  },
+  {
+    label: "网易新闻",
+    search: "https://www.163.com/search?keyword=",
+    type: "netease",
+    url: "https://www.163.com/",
+  },
+  {
+    label: "百度百家号",
+    search: "https://www.baidu.com/s?rsv_dl=feed_landingpage_ib&wd=",
+    type: "baidu",
+    url: "https://baijiahao.baidu.com/",
+  },
+  {
+    label: "搜狐新闻",
+    search: "https://search.sohu.com/?keyword=",
+    type: "sohu",
+    url: "https://www.sohu.com",
+  },
+  {
+    label: "哔哩哔哩",
+    search: "https://search.bilibili.com/all?keyword=",
+    type: "bilibili",
+    url: "https://www.bilibili.com",
+  },
+  {
+    label: "今日头条",
+    search: "https://so.toutiao.com/search?dvpf=pc&source=input&keyword=",
+    type: "toutiao",
+    url: "https://www.toutiao.com/",
+  },
 ];
 export const NewsWebsiteListImonials = [
   {

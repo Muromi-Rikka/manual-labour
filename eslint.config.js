@@ -22,7 +22,12 @@ export default rentonReact(
   {
     files: ["**/*.?([cm])[jt]s?(x)"],
     rules: {
-      "unicorn/filename-case": ["error", { cases: { kebabCase: true, pascalCase: true } }], // React 组件文件按仓库约定 PascalCase
+      "unicorn/filename-case": [
+        "error",
+        {
+          cases: { kebabCase: true, pascalCase: true },
+        },
+      ], // React 组件文件按仓库约定 PascalCase
     },
   },
 );
