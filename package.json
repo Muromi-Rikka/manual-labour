@@ -29,7 +29,7 @@
     "usehooks-ts": "^3.1.1"
   },
   "devDependencies": {
-    "@renton/eslint-config-react": "^1.2.1",
+    "@renton/eslint-config-react": "^2.0.0",
     "@rsbuild/core": "2.3.0",
     "@rsbuild/plugin-react": "2.1.1",
     "@tailwindcss/postcss": "^4.3.4",
