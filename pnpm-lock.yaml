@@ -235,11 +235,11 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0(@renton/eslint-config@2.0.0(@typescript-eslint/eslint-plugin@8.72.1(@typescript-eslint/parser@8.72.1(eslint@10.15.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.15.0(jiti@2.7.0))(typescript@6.0.3))(@typescript-eslint/typescript-estree@8.72.1(typescript@6.0.3))(@typescript-eslint/utils@8.72.1(eslint@10.15.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.15.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.15.0(jiti@2.7.0))(tailwindcss@4.3.5)(typescript@6.0.3)
       '@rsbuild/core':
-        specifier: 2.3.4
-        version: 2.3.4
+        specifier: 2.3.5
+        version: 2.3.5
       '@rsbuild/plugin-react':
         specifier: 2.1.1
-        version: 2.1.1(@rsbuild/core@2.3.4)(@rspack/core@2.3.4(@swc/helpers@0.5.24))
+        version: 2.1.1(@rsbuild/core@2.3.5)(@rspack/core@2.3.4(@swc/helpers@0.5.24))
       '@tailwindcss/postcss':
         specifier: ^4.3.5
         version: 4.3.5
@@ -260,7 +260,7 @@ importers:
         version: 2.7.0
       rsbuild-plugin-google-analytics:
         specifier: ^1.1.0
-        version: 1.1.0(@rsbuild/core@2.3.4)
+        version: 1.1.0(@rsbuild/core@2.3.5)
       tailwindcss:
         specifier: ^4.3.5
         version: 4.3.5
@@ -1074,8 +1074,8 @@ packages:
       eslint-plugin-sonarjs:
         optional: true
 
-  '@rsbuild/core@2.3.4':
-    resolution: {integrity: sha512-1P3nLh/uXOcNTJZxvymRzAmuz8SBiCqY2InliNxQTlS0mWtoXbrRBC/W7zfv3MATk/vPmzODAYoZ5oIULk3Ilg==}
+  '@rsbuild/core@2.3.5':
+    resolution: {integrity: sha512-V2/KL+aM0jR583khX8vJdlH3d5j6Tk1Z3luIKOlOG+jpnbBPqpEJCzxwTZnHcUjNypK3wAJFziusk3JAD0ANDw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -3764,19 +3764,19 @@ snapshots:
       - typescript
       - vitest
 
-  '@rsbuild/core@2.3.4':
+  '@rsbuild/core@2.3.5':
     dependencies:
       '@rspack/core': 2.3.4(@swc/helpers@0.5.24)
       '@swc/helpers': 0.5.24
     transitivePeerDependencies:
       - '@module-federation/runtime-tools'
 
-  '@rsbuild/plugin-react@2.1.1(@rsbuild/core@2.3.4)(@rspack/core@2.3.4(@swc/helpers@0.5.24))':
+  '@rsbuild/plugin-react@2.1.1(@rsbuild/core@2.3.5)(@rspack/core@2.3.4(@swc/helpers@0.5.24))':
     dependencies:
       '@rspack/plugin-react-refresh': 2.0.2(@rspack/core@2.3.4(@swc/helpers@0.5.24))(react-refresh@0.19.0)
       react-refresh: 0.19.0
     optionalDependencies:
-      '@rsbuild/core': 2.3.4
+      '@rsbuild/core': 2.3.5
     transitivePeerDependencies:
       - '@rspack/core'
 
@@ -5571,9 +5571,9 @@ snapshots:
 
   reusify@1.1.0: {}
 
-  rsbuild-plugin-google-analytics@1.1.0(@rsbuild/core@2.3.4):
+  rsbuild-plugin-google-analytics@1.1.0(@rsbuild/core@2.3.5):
     optionalDependencies:
-      '@rsbuild/core': 2.3.4
+      '@rsbuild/core': 2.3.5
 
   run-parallel@1.2.0:
     dependencies:
