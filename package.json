@@ -36,7 +36,7 @@
     "@tanstack/react-query": "^5.108.4",
     "@types/react": "^19.3.3",
     "@types/react-dom": "^19.3.0",
-    "eslint": "^10.15.0",
+    "eslint": "^10.16.0",
     "jiti": "^2.7.0",
     "rsbuild-plugin-google-analytics": "^1.1.0",
     "tailwindcss": "^4.3.5",
